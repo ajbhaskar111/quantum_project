@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.section-padding{
+  padding-left: 8%;
+  padding-right:  8%;
+}
