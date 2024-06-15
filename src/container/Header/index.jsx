@@ -3,6 +3,7 @@ import { Button } from 'primereact/button';
 import { TieredMenu } from 'primereact/tieredmenu';
 import { PrimeIcons } from 'primereact/api';
 
+
 export const Header = () => {
     const menu = useRef(null);
     const items = [
@@ -81,7 +82,9 @@ export const Header = () => {
                 <div className="grid">
                     <div className="md: col-6">
                     <TieredMenu model={items} popup ref={menu} breakpoint="767px" />
-                    <Button onIcon="pi pi-check" onClick={(e) => menu.current.toggle(e)} className="bg-white border-0 text-red-600"/>
+                
+
+                    <Button icon="pi pi-align-justify" onClick={(e) => menu.current.toggle(e)} className="bg-white border-0 text-red-600"/>
                  
                     </div>
                 </div>
