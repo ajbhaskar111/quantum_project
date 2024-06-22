@@ -1,7 +1,4 @@
 import React, { useRef, useState } from "react";
-import { Button } from "primereact/button";
-import { TieredMenu } from "primereact/tieredmenu";
-import { PrimeIcons } from "primereact/api";
 import { MenuContainer } from "../../component/MenuContainer";
 
 export const Header = () => {
@@ -9,7 +6,7 @@ export const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   return (
-    <>
+    <div>
       <section className="">
         <div className="grid">
           <div className="md: col-6">
@@ -21,8 +18,8 @@ export const Header = () => {
             </div>
           </div>
         </div>
-        {isMenu && <MenuContainer />}
+        {isMenu && <MenuContainer isMenuSelected={() => setIsMenu(false)} />}
       </section>
-    </>
+    </div>
   );
 };

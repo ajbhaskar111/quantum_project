@@ -1,24 +1,28 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Button } from "primereact/button";
 import { menuItem } from "../../assets/config";
 import { ListBox } from "primereact/listbox";
+import { useNavigate } from "react-router-dom";
 
-export const MenuContainer = () => {
+export const MenuContainer = (props) => {
   const menu = useRef(null);
+  const navigate = useNavigate();
 
   const [selectedMenu, setSelectedMenu] = useState(menuItem[0]);
+  const [selectedChildMenu, setSelectedChildMenu] = useState(null);
 
   useEffect(() => {
-    console.log(selectedMenu);
-  }, selectedMenu); 
+    console.log(selectedChildMenu);
+    if (selectedChildMenu?.path) {
+      navigate(selectedChildMenu?.path);
+      props.isMenuSelected();
+    }
+  }, [selectedChildMenu]);
 
   return (
-    <>
+    <div className="absolute w-full bg-white">
       <div className="grid col-12">
         <div className="col">
           <div className="p-3">
-            {/* {menuItem.map((item) => item.label)} */}
-
             <ListBox
               value={selectedMenu}
               onChange={(e) => setSelectedMenu(e.value)}
@@ -32,8 +36,8 @@ export const MenuContainer = () => {
           <div className="p-3">
             {selectedMenu && (
               <ListBox
-                value={selectedMenu}
-                onChange={(e) => setSelectedMenu(e.value)}
+                value={selectedChildMenu}
+                onChange={(e) => setSelectedChildMenu(e.value)}
                 options={selectedMenu?.items}
                 optionLabel="label"
                 className="w-full"
@@ -47,6 +51,6 @@ export const MenuContainer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
