@@ -6,8 +6,7 @@ import { ListBox } from "primereact/listbox";
 export const MenuContainer = () => {
   const menu = useRef(null);
 
-  const [isActiveIndex, setIsActiveIndex] = useState(0);
-  const [selectedMenu, setSelectedMenu] = useState(null);
+  const [selectedMenu, setSelectedMenu] = useState(menuItem[0]);
 
   useEffect(() => {
     console.log(selectedMenu);
