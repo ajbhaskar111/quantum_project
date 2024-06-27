@@ -16,3 +16,7 @@ code {
   padding-left: 8%;
   padding-right:  8%;
 }
+.menu_button{
+  border:none !important;
+  box-shadow: none !important;
+}

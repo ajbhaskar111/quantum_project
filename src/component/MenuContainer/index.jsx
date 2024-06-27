@@ -10,40 +10,56 @@ export const MenuContainer = () => {
   const [selectedMenu, setSelectedMenu] = useState(null);
 
   useEffect(() => {
-    console.log(selectedMenu);
+    // console.log(selectedMenu);
   }, selectedMenu); 
+
+  const menuItemTemplate = (option)=>{
+    return (
+      <div className="grid flex align-items-center">
+        
+          <div className="col-10">{option.label}</div>
+          {option.items && 
+          <div className="col-2 text-right"><i className="pi pi-angle-right"/></div>
+          }
+          
+      </div>
+  );
+  }
 
   return (
     <>
-      <div className="grid col-12">
-        <div className="col">
-          <div className="p-3">
+      <div className="grid m-0">
+        <div className="lg:col-4 md:col-4 sm:col-12 p-0">
+          <div className="custome_menu_box_listing">
             {/* {menuItem.map((item) => item.label)} */}
 
-            <ListBox
+            <ListBox 
               value={selectedMenu}
               onChange={(e) => setSelectedMenu(e.value)}
               options={menuItem}
               optionLabel="label"
-              className="w-full"
+              className="w-full bg-white border-none shadow-none border-noround p-0"
+              itemTemplate={menuItemTemplate}
             />
+            
           </div>
         </div>
-        <div className="col">
-          <div className="p-3">
+        <div className="lg:col-4 md:col-4 sm:col-12 p-0 bg-gray-200">
+          <div className="">
             {selectedMenu && (
               <ListBox
                 value={selectedMenu}
                 onChange={(e) => setSelectedMenu(e.value)}
                 options={selectedMenu?.items}
                 optionLabel="label"
-                className="w-full"
+                className="w-full bg-transparent border-none shadow-none border-noround p-0"
+                itemTemplate={menuItemTemplate}
               />
             )}
           </div>
         </div>
-        <div className="col">
-          <div className="text-center p-3 border-round-sm bg-primary font-bold ">
+        <div className="clg:col-4 md:col-4 sm:col-12 p-0" bg-gray-200>
+          <div className="text-center p-3 font-bold ">
             Add
           </div>
         </div>
