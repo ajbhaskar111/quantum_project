@@ -1,17 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Button } from "primereact/button";
 import { menuItem } from "../../assets/config";
 import { ListBox } from "primereact/listbox";
+import { useNavigate } from "react-router-dom";
 
-export const MenuContainer = () => {
+export const MenuContainer = (props) => {
   const menu = useRef(null);
+  const navigate = useNavigate();
 
-  const [isActiveIndex, setIsActiveIndex] = useState(0);
-  const [selectedMenu, setSelectedMenu] = useState(null);
+  const [selectedMenu, setSelectedMenu] = useState(menuItem[0]);
+  const [selectedChildMenu, setSelectedChildMenu] = useState(null);
 
   useEffect(() => {
-    // console.log(selectedMenu);
-  }, selectedMenu); 
+    console.log(selectedChildMenu);
+    if (selectedChildMenu?.path) {
+      navigate(selectedChildMenu?.path);
+      props.isMenuSelected();
+    }
+  }, [selectedChildMenu]);
 
   const menuItemTemplate = (option)=>{
     return (
@@ -27,13 +32,11 @@ export const MenuContainer = () => {
   }
 
   return (
-    <>
-      <div className="grid m-0">
-        <div className="lg:col-4 md:col-4 sm:col-12 p-0">
-          <div className="custome_menu_box_listing">
-            {/* {menuItem.map((item) => item.label)} */}
-
-            <ListBox 
+    <div className="absolute w-full bg-white">
+      <div className="grid col-12">
+        <div className="col">
+          <div className="p-3">
+            <ListBox
               value={selectedMenu}
               onChange={(e) => setSelectedMenu(e.value)}
               options={menuItem}
@@ -48,8 +51,8 @@ export const MenuContainer = () => {
           <div className="">
             {selectedMenu && (
               <ListBox
-                value={selectedMenu}
-                onChange={(e) => setSelectedMenu(e.value)}
+                value={selectedChildMenu}
+                onChange={(e) => setSelectedChildMenu(e.value)}
                 options={selectedMenu?.items}
                 optionLabel="label"
                 className="w-full bg-transparent border-none shadow-none border-noround p-0"
@@ -64,6 +67,6 @@ export const MenuContainer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

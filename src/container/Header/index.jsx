@@ -1,31 +1,25 @@
 import React, { useRef, useState } from "react";
-import { Button } from "primereact/button";
-import { TieredMenu } from "primereact/tieredmenu";
-import { PrimeIcons } from "primereact/api";
 import { MenuContainer } from "../../component/MenuContainer";
-
 
 export const Header = () => {
   const menu = useRef(null);
   const [isMenu, setIsMenu] = useState(false);
- 
 
   return (
-    <>
-      <header className="header ">
-        <div className=" grid m-0 border-1">
-          <div className="md:col-6 lg:col-6 sm: col-12">
-            <Button className="btn bg-white text-red-700 border-0 menu_button" 
-              icon="pi pi-align-justify"
+    <div>
+      <section className="">
+        <div className="grid">
+          <div className="md: col-6">
+            <div
+              className="p-1 m-2 cursor-pointer w-2rem text-center"
               onClick={(e) => setIsMenu(!isMenu)}
-            />
-          </div>
-          <div className="md:col-6 lg:col-6 sm: col-12">
-           <h2 className="m-0">Logo</h2>
+            >
+              <i className="pi pi-align-justify"></i>
+            </div>
           </div>
         </div>
-        {isMenu && <MenuContainer />}
-      </header>
-    </>
+        {isMenu && <MenuContainer isMenuSelected={() => setIsMenu(false)} />}
+      </section>
+    </div>
   );
 };

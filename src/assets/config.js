@@ -10,25 +10,28 @@ export const menuItem = [
       {
         id: 1,
         label: "Overview",
-       
-      },  
+        path: "/overview",
+      },
       {
         id: 2,
         label: "Our History",
+        path: "/history",
       },
     ],
   },
   {
     id: 2,
-    label: "Strategies",
+    label: "Strategies", 
     items: [
       {
         id: 1,
         label: "Overview",
+        path: "/overview",
       },
       {
         id: 2,
         label: "Assignment Managment",
+        path: "/assignmen_managment",
       },
     ],
   },
