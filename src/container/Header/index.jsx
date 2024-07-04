@@ -8,7 +8,7 @@ export const Header = () => {
 
   const handlershowmenu = () => {
     setIsMenu(!isMenu);
-    if (icon == 'pi-align-justify') {
+    if (icon === 'pi-align-justify') {
       setIcon('pi-times');
     }
     else {
