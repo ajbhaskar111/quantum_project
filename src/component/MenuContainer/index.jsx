@@ -21,7 +21,6 @@ export const MenuContainer = (props) => {
   const menuItemTemplate = (option)=>{
     return (
       <div className="grid flex align-items-center">
-        
           <div className="col-10">{option.label}</div>
           {option.items && 
           <div className="col-2 text-right"><i className="pi pi-angle-right"/></div>
@@ -32,10 +31,10 @@ export const MenuContainer = (props) => {
   }
 
   return (
-    <div className="absolute w-full bg-white">
-      <div className="grid col-12">
-        <div className="col">
-          <div className="p-3">
+    <div className="absolute w-full bg-white top-69">
+      <div className="grid">
+        <div className="lg:col-4 md:col-12 sm:col-12 p-0">
+          <div className="inner_box">
             <ListBox
               value={selectedMenu}
               onChange={(e) => setSelectedMenu(e.value)}
@@ -47,8 +46,8 @@ export const MenuContainer = (props) => {
             
           </div>
         </div>
-        <div className="lg:col-4 md:col-4 sm:col-12 p-0 bg-gray-200">
-          <div className="">
+        <div className="lg:col-4 md:col-12 sm:col-12 p-0 bg_lightgray">
+          <div className="p-3">
             {selectedMenu && (
               <ListBox
                 value={selectedChildMenu}
@@ -61,9 +60,9 @@ export const MenuContainer = (props) => {
             )}
           </div>
         </div>
-        <div className="clg:col-4 md:col-4 sm:col-12 p-0" bg-gray-200>
+        <div className="lg:col-4 md:col-12 sm:col-12 p-0 bg-gray-200" >
           <div className="text-center p-3 font-bold ">
-            Add
+            Add laskfjsldkf alksfdjsdl
           </div>
         </div>
       </div>

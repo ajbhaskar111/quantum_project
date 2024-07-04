@@ -1,15 +1,11 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Avenir' !important;
+
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Avenir' ;
 }
 
 .section-padding{
@@ -19,4 +15,66 @@ code {
 .menu_button{
   border:none !important;
   box-shadow: none !important;
+}
+
+
+/* THEME COLOE */
+
+.thm_red{
+  color: #C82027;
+}
+
+.thm_yellow{
+  color:#CDC08B;
+}
+
+.thm_nvblue{
+  color: #4E6766;
+}
+
+.thm_gray{
+  color:#424242;
+}
+.bg_lightgray,.header .p-listbox .p-listbox-list .p-listbox-item.p-highlight{
+  background-color: #F5F4F1;
+}
+.bg_tranper{
+  background-color: transparent !important;
+}
+
+.grid{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.img-fluid{
+  width:100%;
+  width: 100%;
+}
+
+/* font-size */
+
+.fs-25{
+  font-size: 25px;
+}
+
+.botm_border{
+  border-bottom: 1px solid #F5F4F1;
+}
+.top-69{
+  top: 69px;
+}
+/* header */
+.logo_box{
+  width: 198px;
+  height: 46px;
+}
+.header .p-listbox-list{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.header .p-listbox .p-listbox-list .p-listbox-item.p-highlight{
+  color: #000;
+  font-weight: 500;
 }
