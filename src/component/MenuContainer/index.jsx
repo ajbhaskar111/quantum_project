@@ -43,7 +43,6 @@ export const MenuContainer = (props) => {
   const [selectedChildMenu, setSelectedChildMenu] = useState(null);
 
   useEffect(() => {
-    console.log(selectedChildMenu);
     if (selectedChildMenu?.path) {
       navigate(selectedChildMenu?.path);
       props.isMenuSelected();
@@ -92,9 +91,9 @@ export const MenuContainer = (props) => {
             transitionOptions={{ timeout: 0 }}
           >
             {menuItem &&
-              menuItem.map((menuObj) => {
+              menuItem.map((menuObj, index) => {
                 return (
-                  <AccordionTab header={AccordionHeader(menuObj)}>
+                  <AccordionTab header={AccordionHeader(menuObj)} key={index}>
                     <ListBox
                       value={selectedChildMenu}
                       onChange={(e) => setSelectedChildMenu(e.value)}
