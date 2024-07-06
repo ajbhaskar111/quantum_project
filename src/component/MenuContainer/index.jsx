@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { menuItem } from "../../assets/config";
 import { ListBox } from "primereact/listbox";
 import { useNavigate } from "react-router-dom";
-import { BrowserView, isMobile, MobileView } from "react-device-detect";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import styled from "styled-components";
+import useScreenSize from "../../assets/useScreenSize";
 
 let CustomAccordianDiv = styled.div`
   .p-accordion-header-link {
@@ -35,12 +35,26 @@ let CustomAccordianDiv = styled.div`
   }
 `;
 
+let MenuContainerDiv = styled.div`
+  .p-listbox-list {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .p-listbox .p-listbox-list .p-listbox-item.p-highlight {
+    color: #000;
+    font-weight: 500;
+  }
+`;
+
 export const MenuContainer = (props) => {
   const menu = useRef(null);
   const navigate = useNavigate();
 
   const [selectedMenu, setSelectedMenu] = useState(menuItem[0]);
   const [selectedChildMenu, setSelectedChildMenu] = useState(null);
+
+  const screenSize = useScreenSize();
 
   useEffect(() => {
     if (selectedChildMenu?.path) {
@@ -72,7 +86,7 @@ export const MenuContainer = (props) => {
 
   return (
     <div className="absolute w-full bg-white top-69">
-      <MobileView>
+      {screenSize < 990 ? (
         <CustomAccordianDiv className="card">
           <Accordion
             multiple={true}
@@ -107,10 +121,8 @@ export const MenuContainer = (props) => {
               })}
           </Accordion>
         </CustomAccordianDiv>
-      </MobileView>
-
-      <BrowserView>
-        <div className="grid">
+      ) : (
+        <MenuContainerDiv className="grid">
           <div className="lg:col-4 md:col-12 sm:col-12 p-0">
             <div className="inner_box">
               <ListBox
@@ -143,8 +155,8 @@ export const MenuContainer = (props) => {
               Add laskfjsldkf alksfdjsdl
             </div>
           </div>
-        </div>
-      </BrowserView>
+        </MenuContainerDiv>
+      )}
     </div>
   );
 };
