@@ -5,7 +5,6 @@ export const menuItem = [
   {
     id: 1,
     label: "About Apollo",
-    icon: PrimeIcons.PLUS,
     items: [
       {
         id: 1,

@@ -10,12 +10,18 @@
     "primeicons": "^7.0.0",
     "primereact": "^10.6.6",
     "react": "^18.3.1",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "sass": "^1.77.5",
+<<<<<<< HEAD
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.22"
+=======
+    "styled-components": "^6.1.11",
+    "web-vitals": "^2.1.4"
+>>>>>>> 5519ac3848ae4a029aec7a783f86c78fa652c39a
   },
   "scripts": {
     "start": "set PORT= 8100 && react-scripts start",
