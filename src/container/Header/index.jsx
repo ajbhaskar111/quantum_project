@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MenuContainer } from "../../component/MenuContainer";
 
 export const Header = () => {
@@ -8,13 +8,24 @@ export const Header = () => {
 
   const handlershowmenu = () => {
     setIsMenu(!isMenu);
-    if (icon == 'pi-align-justify') {
+    // if (icon == 'pi-align-justify') {
+    //   setIcon('pi-times');
+    // }
+    // else {
+    //   setIcon('pi-align-justify');
+    // }
+  }
+
+  useEffect(()=>{
+
+    if (isMenu) {
       setIcon('pi-times');
     }
     else {
       setIcon('pi-align-justify');
     }
-  }
+
+  },[isMenu])
 
 
   return (
