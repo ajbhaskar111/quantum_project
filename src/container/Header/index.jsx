@@ -19,11 +19,7 @@ export const Header = () => {
               className="btn bg_tranper border-none shadow-none p-1 m-2 cursor-pointer w-2rem text-center"
               onClick={() => setIsMenu(!isMenu)}
             >
-              <i
-                className={`pi ${
-                  isMenu ? "pi-times" : "pi-align-justify"
-                } thm_red fs-25`}
-              ></i>
+              <i className={`pi ${isMenu ? "pi-times" : "pi-align-justify" } thm_red fs-25`}></i>
             </button>
           </div>
         </div>
