@@ -12,6 +12,7 @@ import Overview from "./pages/Overview";
 import History from "./pages/History";
 import Assing_managment from "./pages/Assing_managment";
 import { Header } from "./container/Header";
+import { Footer } from "./container/Footer";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/history" element={<History />} />
         <Route path="/assignmen_managment" element={<Assing_managment />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 };

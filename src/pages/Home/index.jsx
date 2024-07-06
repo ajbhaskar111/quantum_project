@@ -1,11 +1,19 @@
 import React from "react";
- 
+import { HomeSlider } from "../../component/HomeSlider";
+
+
 const Home = () => {
-    return (
-        <div className="text-center">
-            <h1>Welcome to Quantam</h1>
-        </div>
-    );
+
+
+  return (
+    <>
+      <HomeSlider />
+      <div className="grid"></div>
+      
+      <div className="grid"></div>
+      <div className="grid"></div>
+    </>
+  );
 };
- 
+
 export default Home;
