@@ -1,17 +1,13 @@
 import React from "react";
 import { HomeSlider } from "../../component/HomeSlider";
+import { TextVideoSection } from "../../container/TextVideoSection";
 
 
 const Home = () => {
-
-
   return (
     <>
       <HomeSlider />
-      <div className="grid"></div>
-      
-      <div className="grid"></div>
-      <div className="grid"></div>
+      <TextVideoSection/>
     </>
   );
 };

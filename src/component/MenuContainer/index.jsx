@@ -85,7 +85,7 @@ export const MenuContainer = (props) => {
   };
 
   return (
-    <div className="absolute w-full bg-white top-69">
+    <div className="absolute w-full bg-white top-69 z-5">
       {screenSize < 990 ? (
         <CustomAccordianDiv className="card">
           <Accordion
