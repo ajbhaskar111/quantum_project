@@ -11,22 +11,24 @@ export const ArrowButton = (props) => {
         View all services
         </div>
       </div> */}
-      <div className="flex" style={{ fontSize: 12, color:props.textColor }}>
+      <div className="primary-btn-blck">
+      <a target="blank" href={`${props.url}`} className="flex link_hover" style={{ fontSize: 12, color:props.textColor, textDecoration:"none" }}>
         <div
-          className="flex border-circle font-bold"
+          className="flex border-circle font-bold align-items-center justify-content-center"
           style={{
             backgroundColor: props.bgColor,
-            padding: "0.3rem",
-            width: "1.6rem",
-            height: "1.6rem",
+            width: "38px",
+            height: "38px",
           }}
         >
-          <i className="pi pi-arrow-right" style={{ fontSize: "0.9rem" }}></i>
+          <i className="pi pi-arrow-right" style={{ fontSize: "14px", fontWeight:"800" }}></i>
         </div>
-        <div className="ml-2 flex  font-medium uppercase justify-content-center align-items-center">
-          {props.buttonText}
+        <div className="ml-2 flex  font-medium uppercase justify-content-center align-items-center" style={{fontSize: "16px", fontWeight:"600"}}>
+           <span> {props.buttonText}</span>
         </div>
+      </a>
       </div>
+     
     </>
   );
 };
