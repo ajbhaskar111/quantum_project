@@ -3,15 +3,10 @@ import { Image } from "primereact/image";
 export const HomeSlider = (props) => {
   return (
     <>
-      <div className="card flex justify-content-center relative">
+    <section className="banner_section">
+      <div className="card  justify-content-center relative">
         <Image src="media/home_banners.png" alt="Image" width="100%" />
-        <div
-          style={{
-            position: "absolute",
-            bottom: "10%",
-            color: "#F5F4F1",
-          }}
-        >
+        <div className="banner_text">
           <div className="container">
           <h1 style={{ fontSize: 75, fontFamily:"EB Garamond", fontWeight:"normal"}}>
             Mastering <span style={{fontStyle:"italic", fontWeight:"600"}}>real estate</span> complexities,
@@ -26,6 +21,7 @@ export const HomeSlider = (props) => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };
