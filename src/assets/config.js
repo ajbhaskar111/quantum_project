@@ -1,5 +1,3 @@
-import React from 'react'; 
-import { PrimeIcons } from 'primereact/api';
 
 export const menuItem = [
   {

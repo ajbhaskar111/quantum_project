@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { menuItem } from "../../assets/config";
 import { ListBox } from "primereact/listbox";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ import useScreenSize from "../../assets/useScreenSize";
 let CustomAccordianDiv = styled.div`
   .p-accordion-header-link {
     border-radius: 0;
-    background-color: #fff;
+    background-color: #fff; 
     border: 0;
     i {
       margin-top: -8px;
@@ -48,7 +48,6 @@ let MenuContainerDiv = styled.div`
 `;
 
 export const MenuContainer = (props) => {
-  const menu = useRef(null);
   const navigate = useNavigate();
 
   const [selectedMenu, setSelectedMenu] = useState(menuItem[0]);
@@ -57,7 +56,7 @@ export const MenuContainer = (props) => {
   const screenSize = useScreenSize();
 
   useEffect(() => {
-    if (selectedChildMenu?.path) {
+    if (selectedChildMenu?.path) { 
       navigate(selectedChildMenu?.path);
       props.isMenuSelected();
     }

@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
@@ -25,7 +24,7 @@ const App = () => {
         <Route path="/history" element={<History />} />
         <Route path="/assignmen_managment" element={<Assing_managment />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };

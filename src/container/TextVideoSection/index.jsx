@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { ArrowButton } from "../../molecules/ArrowButton";
 import { Image } from "primereact/image";
 
