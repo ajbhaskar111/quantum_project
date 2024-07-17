@@ -1,0 +1,234 @@
+$color_red : #C82027;
+$color_yellow : #CDC08B;
+$color_blue: #4E6766;
+$color_gray: #424242;
+$light_white : #F5F4F1;
+
+
+$ef_gramon_font :"EB Garamond";
+$avenir : "Avenir";
+
+a.icon_link{
+  color: $color_gray !important;
+}
+body,
+.p-component {
+  margin: 0;
+  font-family: 'Avenir' !important;
+  background-color: $light_white;
+
+}
+
+.avenir_font{
+  font-family: $avenir !important;
+}
+
+h1,
+h2 {
+  font-family: $ef_gramon_font;
+  font-weight: normal;
+}
+
+code {
+  font-family: 'Avenir';
+}
+
+.section-padding {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.menu_button {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* THEME COLOE */
+
+.thm_red {
+  color: $color_red;
+}
+
+.thm_yellow {
+  color: $color_yellow;
+}
+
+.thm_nvblue {
+  color: $color_blue ;
+}
+
+.thm_gray {
+  color: $color_gray;
+}
+
+.thmbg_red {
+  background-color: $color_red;
+}
+
+.thmbg_yellow {
+  background-color: $color_yellow;
+}
+
+.thmbg_nvblue {
+  background-color: $color_blue;
+}
+
+.thmbg_gray {
+  background-color: $color_gray;
+}
+
+.bg_lightgray,
+.header .p-listbox .p-listbox-list .p-listbox-item.p-highlight {
+  background-color: $light_white;
+}
+
+.bg_tranper {
+  background-color: transparent !important;
+}
+
+.grid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.img-fluid {
+ 
+  width: 100%;
+  height: 100%;
+}
+
+/* font-size */
+.fs-17{
+  font-size: 17px;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.fs-27{
+  font-size: 27px;
+}
+.fs-30{
+  font-size: 30px;
+}
+.botm_border {
+  border-bottom: 1px solid $light_white;
+}
+
+.top-69 {
+  top: 65px;
+}
+
+/* header */
+.header{
+  padding: 4px 0px;
+}
+.logo_box {
+  width: 198px;
+  height: 40px;
+}
+
+.section_padding {
+  padding: 100px 0px;
+}
+
+.container {
+  padding: 0px 15px;
+}
+
+.details_text {
+  font-size: 18px;
+  line-height: 33px;
+  color: #1E1E1E;
+}
+
+.section_title {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.primary-btn-blck {
+  position: relative;
+  -webkit-transition: .5s ease-out !important;
+  transition: .5s ease-out !important;
+  transition: .4s ease-out !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, $color_yellow)) 100%;
+  background: linear-gradient(270deg, transparent 50%, $color_yellow 0) 100%;
+  background-position-x: 99%;
+  background-size: 300%;
+  border: none;
+  clip-path: inset(0 0 0 0 round 20px);
+  color: $color_yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  -webkit-transition: .5s ease-out !important;
+  transition: .5s ease-out !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+
+}
+.primary-btn-blck.red_button{
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, $color_red)) 100%;
+  background: linear-gradient(270deg, transparent 50%, $color_red 0) 100%;
+  background-position-x: 99%;
+  background-size: 300%;
+  border: none;
+  clip-path: inset(0 0 0 0 round 20px);
+  color: $color_red;
+}
+.primary-btn-blck:hover {
+  -ms-flex-align: center;
+  border: none;
+  clip-path: inset(0 0 0 0 round 20px);
+  color: #fff;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background-position: 0;
+  border-radius: 20px;
+  padding-left: 6pt;
+  padding-right: 15px;
+
+}
+
+.right_column_border .border_column  {
+   border-right: 1px solid $light_white;
+}
+.right_column_border .border_column:last-child{
+  border:none
+}
+.arrow_size{
+  height: 38px;
+  width: 38px;
+  padding: 10px;
+
+}
+.listing{
+  padding: 0px;
+  margin: 0px;
+}
+.listing li{
+  list-style: none;
+
+}
+@media only screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1169px) {
+  .container {
+    width: 100%;
+    margin: 15px auto;
+  }
+}

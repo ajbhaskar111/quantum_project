@@ -1,11 +1,15 @@
 import React from "react";
- 
+import { HomeSlider } from "../../component/HomeSlider";
+import { TextVideoSection } from "../../container/TextVideoSection";
+
+
 const Home = () => {
-    return (
-        <div className="text-center">
-            <h1>Welcome to Quantam</h1>
-        </div>
-    );
+  return (
+    <>
+      <HomeSlider />
+      <TextVideoSection/>
+    </>
+  );
 };
- 
+
 export default Home;
