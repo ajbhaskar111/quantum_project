@@ -199,12 +199,7 @@ code {
 
 }
 
-.right_column_border .border_column  {
-   border-right: 1px solid $light_white;
-}
-.right_column_border .border_column:last-child{
-  border:none
-}
+
 .arrow_size{
   height: 38px;
   width: 38px;
@@ -218,6 +213,10 @@ code {
 .listing li{
   list-style: none;
 
+}
+
+.banner_title{
+  font-size: 75px;
 }
 @media only screen and (min-width: 1170px) {
   .container {

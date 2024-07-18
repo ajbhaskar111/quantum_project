@@ -18,21 +18,14 @@ export const HomeSlider = (props) => {
           <Image src="media/home_banners.png" alt="Image" width="100%" />
           <div style={banner_text}>
             <div className="container">
-              <h1
-                style={{
-                  fontSize: 75,
-                  fontFamily: "EB Garamond",
-                  fontWeight: "normal",
-                }}
-              >
-                Mastering{" "}
+              <h1 className="banner_title">
+                Mastering
                 <span style={{ fontStyle: "italic", fontWeight: "600" }}>
                   real estate
-                </span>{" "}
+                </span>
                 complexities,
                 <br /> shaping
                 <span style={{ fontStyle: "italic", fontWeight: "600" }}>
-                  {" "}
                   investments
                 </span>
                 .
