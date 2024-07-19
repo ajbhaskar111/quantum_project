@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primeflex/primeflex.scss";
 import "primeicons/primeicons.css";
-
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Overview from "./pages/Overview";

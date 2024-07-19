@@ -3,15 +3,6 @@ import React from "react";
 export const ArrowButton = (props) => {
   return (
     <>
-      {/* <div className="grid">
-        <div className="col-1 border-circle text-center" style={{ backgroundColor: "#CDC08B" }}>
-          <i className="pi pi-arrow-right" style={{ fontSize: '1rem' }}></i>
-        </div>
-        <div className="col-11 font-medium uppercase">
-        View all services
-        </div>
-      </div> */}
-
       <a
         target="blank"
         href={`${props.url}`}

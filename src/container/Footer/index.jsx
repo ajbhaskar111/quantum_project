@@ -1,29 +1,29 @@
 import React, { useRef, useState } from "react";
-import { ArrowButton } from "../../molecules/ArrowButton";
-import { ArrowLink } from "../../component/ArrowLink";
+import { ArrowButton } from "../../component/arroButton";
+import { ArrowLink } from "../../component/arrowLink";
 
 export const Footer = () => {
   return (
-    <footer className="footer_secition ">
+    <footer className="footer_secition">
       <div className="top_footer thmbg_nvblue py-4 text-white">
         <div className="container">
           <div className="grid">
             <div className="col-12">
-              <h2 className="text-6xl mb-3 mt-0">
+              <h2 className="section_title mb-3 mt-0">
                 Explore Real-Estate solutions for...
               </h2>
             </div>
             <div className="col-12">
               <div className="grid right_column_border align-items-center">
-                <div className="lg:col-4 md:col-4 sm:col-12 border_column ">
-                  <h3 className="text-2xl font-normal mb-4 mt-2">Investors</h3>
+                <div className="lg:col-4 md:col-4 sm:col-12 border-right-1">
+                  <h3 className="text-2xl font-normal mb-4 mt-2 ">Investors</h3>
                   <ArrowLink url="" />
                 </div>
-                <div className="lg:col-4 md:col-4 sm:col-12 border_column pl-4">
+                <div className="lg:col-4 md:col-4 sm:col-12 border-right-1 pl-4">
                   <h3 className="text-2xl font-normal mb-4 mt-2">Developers</h3>
                   <ArrowLink url="" />
                 </div>
-                <div className="lg:col-4 md:col-4 sm:col-12 border_column pl-4">
+                <div className="lg:col-4 md:col-4 sm:col-12 pl-4">
                   <h3 className="text-2xl font-normal mb-4 mt-2">
                     Hovering societies & others
                   </h3>
