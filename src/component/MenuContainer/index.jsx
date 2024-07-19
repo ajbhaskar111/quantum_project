@@ -112,8 +112,9 @@ export const MenuContainer = (props) => {
                       onChange={(e) => setSelectedChildMenu(e.value)}
                       options={menuObj?.items}
                       optionLabel="label"
-                      className="w-full bg-transparent border-none shadow-none border-noround p-0"
+                      className="w-full bg-transparent border-none shadow-none border-noround p-0 "
                       itemTemplate={menuItemTemplate}
+                      style={{ fontWeight: "500" }}
                     />
                   </AccordionTab>
                 );
@@ -129,8 +130,9 @@ export const MenuContainer = (props) => {
                 onChange={(e) => setSelectedMenu(e.value)}
                 options={menuItem}
                 optionLabel="label"
-                className="w-full bg-white border-none shadow-none border-noround p-0"
+                className="w-full bg-white border-none shadow-none border-noround p-0 "
                 itemTemplate={menuItemTemplate}
+                style={{ fontWeight: "500" }}
               />
             </div>
           </div>
@@ -142,16 +144,25 @@ export const MenuContainer = (props) => {
                   onChange={(e) => setSelectedChildMenu(e.value)}
                   options={selectedMenu?.items}
                   optionLabel="label"
-                  className="w-full bg-transparent border-none shadow-none border-noround p-0"
+                  className="w-full bg-transparent border-none shadow-none border-noround p-0 "
                   itemTemplate={menuItemTemplate}
-                  style={{ backgroundColor: "#F5F4F1" }}
+                  style={{ backgroundColor: "#F5F4F1", fontWeight: "500" }}
                 />
               )}
             </div>
           </div>
           <div className="lg:col-4 md:col-12 sm:col-12 p-0 bg-gray-200">
-            <div className="text-center p-3 font-bold ">
-              Add laskfjsldkf alksfdjsdl
+            <div className="text-center p-3 font-medium uppercase text-2xl ">
+              Featured content
+            </div>
+            <div className="grid">
+              <div className="md:col-8 sm:col-12 col-offset-2">
+                <img
+                  src="media/home_banners.png"
+                  alt="background"
+                  className="img-fluid"
+                />
+              </div>
             </div>
           </div>
         </MenuContainerDiv>

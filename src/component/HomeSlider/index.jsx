@@ -1,12 +1,22 @@
 import React from "react";
 import { Image } from "primereact/image";
+import { ArrowButton } from "../../molecules/ArrowButton";
+
 export const HomeSlider = (props) => {
+  const banner_text = {
+    position: "absolute",
+    left: "0px",
+    right: "0px",
+    bottom: "82px",
+    color: "#fff",
+    margin: "0px auto",
+  };
   return (
     <>
-      <section className="banner_section">
+      <section>
         <div className="card  justify-content-center relative">
           <Image src="media/home_banners.png" alt="Image" width="100%" />
-          <div className="banner_text">
+          <div style={banner_text}>
             <div className="container">
               <h1
                 style={{
@@ -33,6 +43,17 @@ export const HomeSlider = (props) => {
                 Development
                 <br />
                 Business services to shape your ideas into revality
+              </p>
+              <hr className="my-4" />
+              <p>
+                <ArrowButton
+                  width="170"
+                  buttonText="About Quantums"
+                  bgColor="#C82027"
+                  textColor="#fff"
+                  url="https://www.google.com"
+                  className="red_button"
+                />
               </p>
             </div>
           </div>
