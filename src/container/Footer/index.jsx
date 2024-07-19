@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react";
-import { ArrowButton } from "../../component/arroButton";
-import { ArrowLink } from "../../component/arrowLink";
+import React from "react";
+import { ArrowLink } from "../../molecules/ArrowLink";
 
-export const Footer = () => {
+export const Footer = () => { 
   return (
     <footer className="footer_secition">
       <div className="top_footer thmbg_nvblue py-4 text-white">

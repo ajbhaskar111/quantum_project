@@ -1,7 +1,7 @@
 import React from "react";
-import { ArrowLink } from "./arrowLink";
+import { ArrowLink } from "../ArrowLink";
 
-export default function ArrowListing(props) {
+export const ArrowListing = (props) => {
   return (
     <ul className="listing border_listing arrow-listing">
       {props.data
@@ -9,10 +9,10 @@ export default function ArrowListing(props) {
             <li>
               <h3>{item.listtitle}</h3>
               <p className="details-text mb-0 mt-2">{item.listdetail}</p>
-              {item.listlink && <ArrowLink url={item.listlink} />}
+              {item.listlink && <ArrowLink url={item.listlink}/>}
             </li>
           ))
         : "Loading..."}
     </ul>
   );
-}
+};

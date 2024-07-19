@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
-import { ArrowButton } from "../../component/arroButton";
+import React from "react";
+import { ArrowButton } from "../../molecules/ArrowButton";
 import { Image } from "primereact/image";
 export const TextVideoSection = () => {
   return (
     <section className=" section_padding">
-      <div className="container">
+      <div className="container"> 
         <div className="grid" style={{ borderColor: "#C82027" }}>
           <div className="lg:col-5 md:col-5 sm:col-12 align-items-center text-2xl">
             <h2 className="section-title ">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "primereact/image";
-import { ArrowButton } from "../arroButton";
+
+import { ArrowButton } from "../../molecules/ArrowButton";
 
 export const HomeSlider = (props) => {
   const banner_text = {

@@ -1,16 +1,18 @@
 import React from "react";
 import { HomeSlider } from "../../component/HomeSlider";
 import { TextVideoSection } from "../../container/TextVideoSection";
-import DetailBox from "../../component/detailBox";
-import TitleHeading from "../../component/titleHeading";
-import { ArrowButton } from "../../component/arroButton";
-import ArrowListing from "../../component/arrowListing";
+import { TitleHeading } from "../../molecules/TitleHeading";
+import { ArrowListing } from "../../molecules/ArrowListing";
+import { ArrowButton } from "../../molecules/ArrowButton";
+import { DetailBox } from "../../molecules/DetailBox";
+
 
 const Home = () => {
   const listindata = [
     {
       listtitle: "3 billion sqft",
       listdetail: "Area Serviced",
+      listlink:"https://www.google.com"
     },
     {
       listtitle: "4400+",
@@ -48,7 +50,7 @@ const Home = () => {
             <div className="lg:col-8 md:col-7 sm:col-12">
               <img
                 src="media/HomePageMap.png"
-                alt="map-image"
+                alt={"map-image"}
                 className="img-fluid m-auto"
               />
             </div>
