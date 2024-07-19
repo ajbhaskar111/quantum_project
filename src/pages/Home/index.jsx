@@ -5,14 +5,17 @@ import { TitleHeading } from "../../molecules/TitleHeading";
 import { ArrowListing } from "../../molecules/ArrowListing";
 import { ArrowButton } from "../../molecules/ArrowButton";
 import { DetailBox } from "../../molecules/DetailBox";
-
+import { Carousel } from "primereact/carousel";
+import { responsiveSliderOptions } from "../../assets/config";
+import Slider1 from "./Slider1";
+import Slider2 from "./Slider2";
 
 const Home = () => {
   const listindata = [
     {
       listtitle: "3 billion sqft",
       listdetail: "Area Serviced",
-      listlink:"https://www.google.com"
+      listlink: "https://www.google.com",
     },
     {
       listtitle: "4400+",
@@ -27,6 +30,8 @@ const Home = () => {
       listdetail: "Indian Cites",
     },
   ];
+
+
   return (
     <>
       <section className="sliderSection">
@@ -58,28 +63,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-white client_section section_padding">
-        <div className="container">
-          <div className="grid section-title">
-            <div className="md:col-6 sm:col-12">
-              <TitleHeading title="Trusted Globally" className="m-0" />
-              <DetailBox details="by 300+ institutional investors & real-estate developers" />
-            </div>
-            <div className="md:col-6 sm:col-12 flex align-items-center justify-content-end">
-              <ArrowButton
-                width="170"
-                buttonText="View all services"
-                bgColor="#CDC08B"
-                textColor="#000000"
-                url="https://www.google.com"
-              />
-            </div>
-          </div>
-          <div>
-            <h1>Put the slider component in here</h1>
-          </div>
-        </div>
-      </section>
+     <Slider1/>
+     <Slider2/>
     </>
   );
 };
