@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { ArrowButton } from "../../molecules/ArrowButton";
+import { ArrowButton } from "../../component/arroButton";
 import { Image } from "primereact/image";
 export const TextVideoSection = () => {
   return (

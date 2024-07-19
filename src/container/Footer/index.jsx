@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import { ArrowButton } from "../../molecules/ArrowButton";
-import { ArrowLink } from "../../component/ArrowLink";
+import { ArrowButton } from "../../component/arroButton";
+import { ArrowLink } from "../../component/arrowLink";
 
 export const Footer = () => {
   return (
