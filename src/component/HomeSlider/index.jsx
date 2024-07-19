@@ -31,10 +31,10 @@ export const HomeSlider = (props) => {
             </h1>
 
             <p className="banner_detail_text">
-              We offer a comprehensive range of end-to-end Real Estate
-              Development
+              We are elevating investment standards, safeguarding and improving
+              asset quality
               <br />
-              Business services to shape your ideas into revality
+              and enhancing development capabilities.
             </p>
             <hr className="my-4" />
             <p>
