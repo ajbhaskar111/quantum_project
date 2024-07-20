@@ -1,10 +1,12 @@
 import React from "react";
 import { ArrowButton } from "../../molecules/ArrowButton";
 import { Image } from "primereact/image";
+import "primeicons/primeicons.css";
+
 export const TextVideoSection = () => {
   return (
-    <section className=" section_padding">
-      <div className="container"> 
+    <section className=" section-padding">
+      <div className="container">
         <div className="grid" style={{ borderColor: "#C82027" }}>
           <div className="lg:col-5 md:col-5 sm:col-12 align-items-center text-2xl">
             <h2 className="section-title ">
@@ -35,14 +37,18 @@ export const TextVideoSection = () => {
               url="https://www.google.com"
             />
             <div
-              className="mt-4 pt-4 border-top-1"
+              className="my-5  border-top-1"
               style={{ borderColor: "#C82027" }}
-            >
-              <Image
-                src="media/home_about_banner.png"
-                alt="Image"
-                width="100%"
-              />
+            ></div>
+            <div className="overlay-icon relative">
+              <a href="/">
+                <i className="pi pi-youtube text-white absolute text-5xl flex align-items-center justify-content-center"></i>
+                <Image
+                  src="media/home_about_banner.png"
+                  alt="Image"
+                  width="100%"
+                />
+              </a>
             </div>
           </div>
         </div>

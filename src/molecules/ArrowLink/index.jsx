@@ -4,7 +4,7 @@ export const ArrowLink = (props) => {
   return (
     <a
       href={`${props.url}`}
-      className="flex border-circle font-bold align-items-center justify-content-center no-underline bg-white arrow_size icon_link"
+      className="flex border-circle font-bold align-items-center justify-content-center no-underline bg-white arrow-size icon-link"
       target="_blank"
     >
       {props.iconurl ? (

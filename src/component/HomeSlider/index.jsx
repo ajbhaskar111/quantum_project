@@ -1,37 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Image } from "primereact/image";
-
 import { ArrowButton } from "../../molecules/ArrowButton";
 
 export const HomeSlider = (props) => {
-  const banner_text = {
-    position: "absolute",
-    left: "0px",
-    right: "0px",
-    bottom: "82px",
-    color: "#fff",
-    margin: "0px auto",
-  };
   return (
     <>
-      <div className="card  justify-content-center relative">
+      <div className="card justify-content-center relative">
         <Image src="media/home_banners.png" alt="Image" width="100%" />
-        <div style={banner_text}>
+        <div className="banner-text color-white">
           <div className="container">
-            <h1 className="banner_title">
+            <h1 className="banner-title text-white ">
               Mastering
-              <span style={{ fontStyle: "italic", fontWeight: "600" }}>
+              <span
+                style={{ fontStyle: "italic", fontWeight: "600" }}
+                className="mx-2 inline-block"
+              >
                 real estate
               </span>
               complexities,
               <br /> shaping
-              <span style={{ fontStyle: "italic", fontWeight: "600" }}>
+              <span
+                style={{ fontStyle: "italic", fontWeight: "600" }}
+                className="mx-2 inline-block"
+              >
                 investments
               </span>
               .
             </h1>
 
-            <p className="banner_detail_text">
+            <p className="banner-detail-text text-white">
               We are elevating investment standards, safeguarding and improving
               asset quality
               <br />

@@ -9,10 +9,10 @@ import useScreenSize from "../../assets/useScreenSize";
 let CustomAccordianDiv = styled.div`
   .p-accordion-header-link {
     border-radius: 0;
-    background-color: #fff; 
+    background-color: #fff;
     border: 0;
     i {
-      margin-top: -8px;
+      margin-top: 8px;
       position: absolute;
       right: 0.5em;
       top: 50%;
@@ -23,10 +23,6 @@ let CustomAccordianDiv = styled.div`
     .p-accordion-header-link,
     .p-accordion-content {
       background: #f5f4f1;
-    }
-
-    .p-accordion-content {
-      padding: 0;
     }
   }
 
@@ -56,7 +52,7 @@ export const MenuContainer = (props) => {
   const screenSize = useScreenSize();
 
   useEffect(() => {
-    if (selectedChildMenu?.path) { 
+    if (selectedChildMenu?.path) {
       navigate(selectedChildMenu?.path);
       props.isMenuSelected();
     }
@@ -84,7 +80,7 @@ export const MenuContainer = (props) => {
   };
 
   return (
-    <div className="absolute w-full bg-white top-69 z-5">
+    <div className="absolute w-full bg-white top-57 z-5">
       {screenSize < 990 ? (
         <CustomAccordianDiv className="card">
           <Accordion
@@ -124,7 +120,7 @@ export const MenuContainer = (props) => {
       ) : (
         <MenuContainerDiv className="grid">
           <div className="lg:col-4 md:col-12 sm:col-12 p-0">
-            <div className="inner_box">
+            <div className="inner-box">
               <ListBox
                 value={selectedMenu}
                 onChange={(e) => setSelectedMenu(e.value)}
@@ -136,8 +132,8 @@ export const MenuContainer = (props) => {
               />
             </div>
           </div>
-          <div className="lg:col-4 md:col-12 sm:col-12 p-0 bg_lightgray">
-            <div className="">
+          <div className="lg:col-4 md:col-12 sm:col-12 bg-lightgray p-0">
+            <div className="inner-box">
               {selectedMenu && (
                 <ListBox
                   value={selectedChildMenu}
@@ -151,7 +147,7 @@ export const MenuContainer = (props) => {
               )}
             </div>
           </div>
-          <div className="lg:col-4 md:col-12 sm:col-12 p-0 bg-gray-200">
+          <div className="lg:col-4 md:col-12 sm:col-12  bg-gray-200 p-0">
             <div className="text-center p-3 font-medium uppercase text-2xl ">
               Featured content
             </div>

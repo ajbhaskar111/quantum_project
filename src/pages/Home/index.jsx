@@ -15,7 +15,6 @@ const Home = () => {
     {
       listtitle: "3 billion sqft",
       listdetail: "Area Serviced",
-      listlink: "https://www.google.com",
     },
     {
       listtitle: "4400+",
@@ -31,19 +30,18 @@ const Home = () => {
     },
   ];
 
-
   return (
     <>
       <section className="sliderSection">
         <HomeSlider />
       </section>
-      <section className="video_section">
+      <section className="video-section">
         <TextVideoSection />
       </section>
       <div className="container">
         <hr type="solid" className="bg-black m-0" />
       </div>
-      <section className="map_sction section_padding">
+      <section className="map_sction section-padding">
         <div className="container">
           <div className="grid align-items-center">
             <div className="lg:col-4 md:col-5 sm:col-12">
@@ -62,9 +60,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-     <Slider1/>
-     <Slider2/>
+      <section className="bg-white client_section section-padding">
+        <Slider1 />
+      </section>
+      <section className="client_section section-padding">
+        <Slider2 />
+      </section>
+      <section className="section-padding"></section>
     </>
   );
 };

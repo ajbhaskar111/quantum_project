@@ -6,7 +6,7 @@ export const ArrowButton = (props) => {
       <a
         target="blank"
         href={`${props.url}`}
-        className={`primary-btn-blck ${props.className} flex link_hover`}
+        className={`primary-btn-blck ${props.className} flex link-hover`}
         style={{
           fontSize: 12,
           color: props.textColor,

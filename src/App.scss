@@ -8,7 +8,7 @@ $light_white : #F5F4F1;
 $ef_gramon_font :"EB Garamond";
 $avenir : "Avenir";
 
-a.icon_link{
+a.icon-link{
   color: $color_gray !important;
 }
 body,
@@ -19,7 +19,7 @@ body,
 
 }
 
-.avenir_font{
+.avenir-font{
   font-family: $avenir !important;
 }
 
@@ -38,7 +38,7 @@ code {
   padding-right: 8%;
 }
 
-.menu_button {
+.menu-button {
   border: none !important;
   box-shadow: none !important;
 }
@@ -46,44 +46,44 @@ code {
 
 /* THEME COLOE */
 
-.thm_red {
+.thm-red {
   color: $color_red;
 }
 
-.thm_yellow {
+.thm-yellow {
   color: $color_yellow;
 }
 
-.thm_nvblue {
+.thm-nvblue {
   color: $color_blue ;
 }
 
-.thm_gray {
+.thm-gray {
   color: $color_gray;
 }
 
-.thmbg_red {
+.thmbg-red {
   background-color: $color_red;
 }
 
-.thmbg_yellow {
+.thmbg-yellow {
   background-color: $color_yellow;
 }
 
-.thmbg_nvblue {
+.thmbg-nvblue {
   background-color: $color_blue;
 }
 
-.thmbg_gray {
+.thmbg-gray {
   background-color: $color_gray;
 }
 
-.bg_lightgray,
+.bg-lightgray,
 .header .p-listbox .p-listbox-list .p-listbox-item.p-highlight {
   background-color: $light_white;
 }
 
-.bg_tranper {
+.bg-tranper {
   background-color: transparent !important;
 }
 
@@ -111,24 +111,22 @@ code {
 .fs-30{
   font-size: 30px;
 }
-.botm_border {
-  border-bottom: 1px solid $light_white;
-}
 
-.top-69 {
-  top: 65px;
+
+.top-57 {
+  top: 57px;
 }
 
 /* header */
 .header{
   padding: 4px 0px;
 }
-.logo_box {
+.logo-box {
   width: 198px;
   height: 40px;
 }
 
-.section_padding {
+.section-padding {
   padding: 70px 0px;
 }
 .section-title{
@@ -202,7 +200,7 @@ code {
 }
 
 
-.arrow_size{
+.arrow-size{
   height: 38px;
   width: 38px;
   padding: 10px;
@@ -216,14 +214,22 @@ code {
   list-style: none;
 
 }
+.banner-text{
+  position: absolute;
+  left: 0px;
+  right:0px;
+  bottom:15px;
+  font-size: 75px;  
+  letter-spacing: 2px;
 
-.banner_title{
+}
+.banner-title{
   font-size: 75px;
 }
-.banner_detail_text{
+.banner-detail-text{
   font-size: 25px;
 }
-.border_listing li{
+.border-listing li{
   margin-bottom: 30px;
   border-bottom:1px solid $color_red
 }
@@ -242,6 +248,15 @@ code {
   min-height: 70px;
 
 
+}
+.overlay-icon i{
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom:0px;
+    width: 100%;
+    height: 100%;
+   
 }
 @media only screen and (min-width: 1170px) {
   .container {

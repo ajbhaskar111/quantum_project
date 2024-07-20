@@ -16,7 +16,6 @@ const Slider1 = () => {
     "media/home_slider/3_1.png",
   ]);
 
-
   const productTemplate = (item) => {
     return (
       <div className="text-center p-3">
@@ -30,39 +29,37 @@ const Slider1 = () => {
   };
 
   return (
-    <section className="bg-white client_section section_padding">
-      <div className="container">
-        <div className="grid section-title">
-          <div className="md:col-6 sm:col-12">
-            <TitleHeading title="Trusted Globally" className="m-0" />
-            <DetailBox details="by 300+ institutional investors & real-estate developers" />
-          </div>
-          <div className="md:col-6 sm:col-12 flex align-items-center justify-content-end">
-            <ArrowButton
-              width="170"
-              buttonText="Clients"
-              bgColor="#CDC08B"
-              textColor="#000000"
-              url="https://www.google.com"
-            />
-          </div>
+    <div className="container">
+      <div className="grid section-title">
+        <div className="md:col-6 sm:col-12">
+          <TitleHeading title="Trusted Globally" className="m-0" />
+          <DetailBox details="by 300+ institutional investors & real-estate developers" />
         </div>
-        <div>
-          <Carousel
-            value={sliderdata}
-            numVisible={4}
-            numScroll={1}
-            responsiveOptions={responsiveSliderOptions}
-            itemTemplate={productTemplate}
-            showIndicators={false}
-            showNavigators={false}
-            autoplayInterval={3000}
-            circular={true}
-            style={{ backgroundColor: "transparent" }}
+        <div className="md:col-6 sm:col-12 flex align-items-center justify-content-end">
+          <ArrowButton
+            width="170"
+            buttonText="Clients"
+            bgColor="#CDC08B"
+            textColor="#000000"
+            url="https://www.google.com"
           />
         </div>
       </div>
-    </section>
+      <div>
+        <Carousel
+          value={sliderdata}
+          numVisible={4}
+          numScroll={1}
+          responsiveOptions={responsiveSliderOptions}
+          itemTemplate={productTemplate}
+          showIndicators={false}
+          showNavigators={false}
+          autoplayInterval={3000}
+          circular={true}
+          style={{ backgroundColor: "transparent" }}
+        />
+      </div>
+    </div>
   );
 };
 

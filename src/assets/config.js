@@ -34,7 +34,7 @@ export const menuItem = [
   },
 ];
 
-export const   responsiveSliderOptions = [
+export const  responsiveSliderOptions = [
   {
       breakpoint: '1400px',
       numVisible: 4,
@@ -42,12 +42,12 @@ export const   responsiveSliderOptions = [
   },
   {
       breakpoint: '1199px',
-      numVisible: 4,
+      numVisible: 3,
       numScroll: 1
   },
   {
       breakpoint: '767px',
-      numVisible: 4,
+      numVisible: 2,
       numScroll: 1
   },
   {
