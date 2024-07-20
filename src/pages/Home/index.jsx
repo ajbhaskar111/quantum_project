@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector, RootStateOrAny } from "react-redux";
+
 import { HomeSlider } from "../../component/HomeSlider";
 import { TextVideoSection } from "../../container/TextVideoSection";
 import { TitleHeading } from "../../molecules/TitleHeading";
 import { ArrowListing } from "../../molecules/ArrowListing";
-import { ArrowButton } from "../../molecules/ArrowButton";
-import { DetailBox } from "../../molecules/DetailBox";
-import { Carousel } from "primereact/carousel";
-import { responsiveSliderOptions } from "../../assets/config";
+
 import Slider1 from "./Slider1";
 import Slider2 from "./Slider2";
 
 const Home = () => {
+  const { homeSlider } = useSelector(
+    (state: RootStateOrAny) => state.dashboard
+  );
+
+  useEffect(() => {
+    console.log("homeSlider", homeSlider);
+  }, [homeSlider]);
+
   const listindata = [
     {
       listtitle: "3 billion sqft",
