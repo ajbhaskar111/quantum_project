@@ -1,0 +1,1 @@
+export const SET_HOMEPAGE = "SET_HOMEPAGE"
