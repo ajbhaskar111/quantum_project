@@ -60,7 +60,7 @@ export const MenuContainer = (props) => {
 
   const menuItemTemplate = (option) => {
     return (
-      <div className="grid flex align-items-center">
+      <div className="grid flex align-items-center ">
         <div className="col-10">{option.label}</div>
         {option.items && (
           <div className="col-2 text-right">
@@ -80,7 +80,7 @@ export const MenuContainer = (props) => {
   };
 
   return (
-    <div className="absolute w-full bg-white top-57 z-5">
+    <div className="absolute w-full bg-white top-64 z-5 ">
       {screenSize < 990 ? (
         <CustomAccordianDiv className="card">
           <Accordion

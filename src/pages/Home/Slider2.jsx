@@ -4,6 +4,7 @@ import { ArrowButton } from "../../molecules/ArrowButton";
 import { DetailBox } from "../../molecules/DetailBox";
 import { Carousel } from "primereact/carousel";
 import { responsiveSliderOptions } from "../../assets/config";
+import { SmallHadding } from "molecules/SmallHeadding";
 
 const Slider2 = () => {
   const [sliderdata, setSliderdata] = useState([
@@ -40,8 +41,9 @@ const Slider2 = () => {
           //alt={product.name}
           className="w-full"
         />
-        <p className="font-medium">{item.title}</p>
-        <p className="font-normal text-sm">{item.description}</p>
+        <SmallHadding text={item.title} />
+        {/* <p className="font-medium">{item.title}</p> */}
+        <DetailBox details={item.description} />
       </div>
     );
   };

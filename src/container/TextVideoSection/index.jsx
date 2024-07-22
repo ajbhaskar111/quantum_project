@@ -1,7 +1,8 @@
 import React from "react";
 import { ArrowButton } from "../../molecules/ArrowButton";
-import { Image } from "primereact/image";
+
 import "primeicons/primeicons.css";
+import { BigImgBox } from "molecules/BigImgBox";
 
 export const TextVideoSection = () => {
   return (
@@ -40,16 +41,7 @@ export const TextVideoSection = () => {
               className="my-5  border-top-1"
               style={{ borderColor: "#C82027" }}
             ></div>
-            <div className="overlay-icon relative">
-              <a href="/">
-                <i className="pi pi-youtube text-white absolute text-5xl flex align-items-center justify-content-center"></i>
-                <Image
-                  src="media/home_about_banner.png"
-                  alt="Image"
-                  width="100%"
-                />
-              </a>
-            </div>
+            <BigImgBox imgpath="media/home_about_banner.png" />
           </div>
         </div>
       </div>

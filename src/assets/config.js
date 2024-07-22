@@ -7,12 +7,17 @@ export const menuItem = [
       {
         id: 1,
         label: "Overview",
-        path: "/overview",
+        path: "/about-us",
       },
       {
         id: 2,
         label: "Our History",
         path: "/history",
+      },
+      {
+        id: 2,
+        label: "Our People",
+        path: "/our-people",
       },
     ],
   },

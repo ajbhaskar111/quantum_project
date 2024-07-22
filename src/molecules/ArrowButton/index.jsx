@@ -28,7 +28,7 @@ export const ArrowButton = (props) => {
         </div>
         <div
           className="ml-2 flex  font-medium uppercase justify-content-center align-items-center"
-          style={{ fontSize: "16px", fontWeight: "600" }}
+          style={{ fontSize: "15px", fontWeight: "600" }}
         >
           <span> {props.buttonText}</span>
         </div>

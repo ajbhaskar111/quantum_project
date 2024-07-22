@@ -4,7 +4,7 @@ export const ArrowLink = (props) => {
   return (
     <a
       href={`${props.url}`}
-      className="flex border-circle font-bold align-items-center justify-content-center no-underline bg-white arrow-size icon-link"
+      className={`flex border-circle font-bold align-items-center justify-content-center no-underline  arrow-size icon-link ${props.className}`}
       target="_blank"
     >
       {props.iconurl ? (
@@ -13,7 +13,7 @@ export const ArrowLink = (props) => {
         <i
           className={`pi ${props.iconName ? props.iconName : "pi-arrow-right"}  
 
-        fs-20 font-bold color-black `}
+        fs-17 font-bold color-black `}
         ></i>
       )}
     </a>

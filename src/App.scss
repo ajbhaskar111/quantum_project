@@ -24,8 +24,8 @@ body,
 }
 
 h1,
-h2 {
-  font-family: $ef_gramon_font;
+h2,.ef-gamon-font {
+  font-family: $ef_gramon_font !important;
   font-weight: normal;
 }
 
@@ -113,8 +113,8 @@ code {
 }
 
 
-.top-57 {
-  top: 57px;
+.top-64 {
+  top: 64px;
 }
 
 /* header */
@@ -130,7 +130,7 @@ code {
   padding: 70px 0px;
 }
 .section-title{
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 .container {
   padding: 0px 15px;
@@ -238,16 +238,21 @@ code {
   font-size: 25px;
   font-weight: 600;
 }
-.arrow-listing p{
+.arrow-listing p,.four-line-text,.two-line-text{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-          line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+.arrow-listing p,.two-line-text{
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
   min-height: 70px;
-
-
+}
+.four-line-text{
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  // min-height: 70px;
 }
 .overlay-icon i{
     top:0px;
@@ -258,15 +263,24 @@ code {
     height: 100%;
    
 }
+.listing-imgbox{
+  width: 192px;
+  height: 192px;
+}
+.inner-banner-text{
+  position: absolute;
+  bottom: 40px;
+  left: 3%;
+}
 @media only screen and (min-width: 1170px) {
-  .container {
-    width: 1170px;
+  .container,.section-border-width {
+    width: 1280px;
     margin: 0px auto;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1169px) {
-  .container {
+  .container,.section-border-width  {
     width: 100%;
     margin: 15px auto;
   }

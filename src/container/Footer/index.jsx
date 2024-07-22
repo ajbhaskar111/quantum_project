@@ -16,17 +16,17 @@ export const Footer = () => {
               <div className="grid  align-items-center">
                 <div className="lg:col-4 md:col-4 sm:col-12 border-right-1">
                   <h3 className="text-2xl font-normal mb-4 mt-2 ">Investors</h3>
-                  <ArrowLink url="" />
+                  <ArrowLink url="" className="bg-white" />
                 </div>
                 <div className="lg:col-4 md:col-4 sm:col-12 border-right-1 pl-4">
                   <h3 className="text-2xl font-normal mb-4 mt-2">Developers</h3>
-                  <ArrowLink url="" />
+                  <ArrowLink url="" className="bg-white" />
                 </div>
                 <div className="lg:col-4 md:col-4 sm:col-12 pl-4">
                   <h3 className="text-2xl font-normal mb-4 mt-2">
                     Hovering societies & others
                   </h3>
-                  <ArrowLink url="" />
+                  <ArrowLink url="" className="bg-white" />
                 </div>
               </div>
             </div>
@@ -41,9 +41,13 @@ export const Footer = () => {
               <h3 className="fs-27 font-normal mb-5 pb-3 mt-2 border-bottom-1">
                 Social Links
               </h3>
-              <ArrowLink url="" iconurl="media/linked_in.png" />
+              <ArrowLink
+                url=""
+                iconurl="media/linked_in.png"
+                className="bg-white"
+              />
               <br />
-              <ArrowLink url="" iconName="pi-youtube" />
+              <ArrowLink url="" iconName="pi-youtube" className="bg-white" />
             </div>
             <div className="lg:col-4 md:col-4 sm:col-12">
               <h3 className="fs-27 font-normal mb-5 pb-3 mt-2 border-bottom-1">
@@ -117,11 +121,20 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="copy-right-section border-top-1">
+        <div className="copy-right-section border-top-1 pt-3 border-white-alpha-20">
           <div className="container">
             <div className="grid align-items-center">
-              <div className="lg:col-3 md:col-4 sm:col-12">
-                <img src="media/qauntumn-white.png" alt="" />
+              <div className="lg:col-2 md:col-3 sm:col-12">
+                <img
+                  src="media/qauntumn-white.png"
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+              <div className="lg:col-10 md:col-9 sm:col-12">
+                <h4 className="text-white-800 font-normal text-center fs-18 my-0">
+                  Quantum ProjectInfra Pvt. Ltd., 2024 All Rights Reserved
+                </h4>
               </div>
             </div>
           </div>
