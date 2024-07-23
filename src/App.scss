@@ -1,3 +1,6 @@
+
+
+
 $color_red : #C82027;
 $color_yellow : #CDC08B;
 $color_blue: #4E6766;
@@ -271,6 +274,33 @@ code {
   position: absolute;
   bottom: 40px;
   left: 3%;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator button{
+  border-radius: 100px;
+  background-color: transparent !important;
+  height: 15px;
+  width: 15px;
+  border:1px solid $color_red;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+  background-color: $color_red !important;
+
+}
+.video-box:hover{
+  cursor: pointer;
+}
+.video-box::before{
+  content: '';
+  position: absolute;
+  background-image: url('../public/media/vidoe_icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0px;
+  right: 0px;
+  bottom:4px;
+  top: 0px;
+  display: block;
+  background-color: rgba(0,0,0,0.2);
 }
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {
