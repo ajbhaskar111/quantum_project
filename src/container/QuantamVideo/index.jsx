@@ -28,7 +28,7 @@ export const QuantamVideo = (props) => {
       >
         <div className="grid bg-black-alpha-10 absolute text-white mt-0 w-full">
           <div className="col-9 text-left">
-            <p>{props?.item.title}</p>
+            <p>{props?.item?.title}</p>
           </div>
           <div className="col-3 text-right z-5">
             <i
