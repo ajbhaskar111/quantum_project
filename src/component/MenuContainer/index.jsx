@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { menuItem } from "../../assets/config";
 import { ListBox } from "primereact/listbox";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ let CustomAccordianDiv = styled.div`
     background-color: #fff;
     border: 0;
     i {
-      margin-top: -8px;
+      margin-top: 8px;
       position: absolute;
       right: 0.5em;
       top: 50%;
@@ -23,10 +23,6 @@ let CustomAccordianDiv = styled.div`
     .p-accordion-header-link,
     .p-accordion-content {
       background: #f5f4f1;
-    }
-
-    .p-accordion-content {
-      padding: 0;
     }
   }
 
@@ -48,7 +44,6 @@ let MenuContainerDiv = styled.div`
 `;
 
 export const MenuContainer = (props) => {
-  const menu = useRef(null);
   const navigate = useNavigate();
 
   const [selectedMenu, setSelectedMenu] = useState(menuItem[0]);
@@ -65,7 +60,7 @@ export const MenuContainer = (props) => {
 
   const menuItemTemplate = (option) => {
     return (
-      <div className="grid flex align-items-center">
+      <div className="grid flex align-items-center ">
         <div className="col-10">{option.label}</div>
         {option.items && (
           <div className="col-2 text-right">
@@ -85,7 +80,7 @@ export const MenuContainer = (props) => {
   };
 
   return (
-    <div className="absolute w-full bg-white top-69 z-5">
+    <div className="absolute w-full bg-white top-64 z-5 ">
       {screenSize < 990 ? (
         <CustomAccordianDiv className="card">
           <Accordion
@@ -125,7 +120,7 @@ export const MenuContainer = (props) => {
       ) : (
         <MenuContainerDiv className="grid">
           <div className="lg:col-4 md:col-12 sm:col-12 p-0">
-            <div className="inner_box">
+            <div className="inner-box">
               <ListBox
                 value={selectedMenu}
                 onChange={(e) => setSelectedMenu(e.value)}
@@ -137,8 +132,8 @@ export const MenuContainer = (props) => {
               />
             </div>
           </div>
-          <div className="lg:col-4 md:col-12 sm:col-12 p-0 bg_lightgray">
-            <div className="">
+          <div className="lg:col-4 md:col-12 sm:col-12 bg-lightgray p-0">
+            <div className="inner-box">
               {selectedMenu && (
                 <ListBox
                   value={selectedChildMenu}
@@ -152,7 +147,7 @@ export const MenuContainer = (props) => {
               )}
             </div>
           </div>
-          <div className="lg:col-4 md:col-12 sm:col-12 p-0 bg-gray-200">
+          <div className="lg:col-4 md:col-12 sm:col-12  bg-gray-200 p-0">
             <div className="text-center p-3 font-medium uppercase text-2xl ">
               Featured content
             </div>

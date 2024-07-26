@@ -1,5 +1,3 @@
-import React from 'react'; 
-import { PrimeIcons } from 'primereact/api';
 
 export const menuItem = [
   {
@@ -9,12 +7,17 @@ export const menuItem = [
       {
         id: 1,
         label: "Overview",
-        path: "/overview",
+        path: "/about-us",
       },
       {
         id: 2,
         label: "Our History",
         path: "/history",
+      },
+      {
+        id: 2,
+        label: "Our People",
+        path: "/our-people",
       },
     ],
   },
@@ -34,4 +37,27 @@ export const menuItem = [
       },
     ],
   },
+];
+
+export const  responsiveSliderOptions = [
+  {
+      breakpoint: '1400px',
+      numVisible: 4,
+      numScroll: 1
+  },
+  {
+      breakpoint: '1199px',
+      numVisible: 3,
+      numScroll: 1
+  },
+  {
+      breakpoint: '767px',
+      numVisible: 2,
+      numScroll: 1
+  },
+  {
+      breakpoint: '575px',
+      numVisible: 1,
+      numScroll: 1
+  }
 ];

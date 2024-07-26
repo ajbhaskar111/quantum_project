@@ -1,3 +1,6 @@
+
+
+
 $color_red : #C82027;
 $color_yellow : #CDC08B;
 $color_blue: #4E6766;
@@ -8,7 +11,7 @@ $light_white : #F5F4F1;
 $ef_gramon_font :"EB Garamond";
 $avenir : "Avenir";
 
-a.icon_link{
+a.icon-link{
   color: $color_gray !important;
 }
 body,
@@ -19,13 +22,13 @@ body,
 
 }
 
-.avenir_font{
+.avenir-font{
   font-family: $avenir !important;
 }
 
 h1,
-h2 {
-  font-family: $ef_gramon_font;
+h2,.ef-gamon-font {
+  font-family: $ef_gramon_font !important;
   font-weight: normal;
 }
 
@@ -38,7 +41,7 @@ code {
   padding-right: 8%;
 }
 
-.menu_button {
+.menu-button {
   border: none !important;
   box-shadow: none !important;
 }
@@ -46,44 +49,44 @@ code {
 
 /* THEME COLOE */
 
-.thm_red {
+.thm-red {
   color: $color_red;
 }
 
-.thm_yellow {
+.thm-yellow {
   color: $color_yellow;
 }
 
-.thm_nvblue {
+.thm-nvblue {
   color: $color_blue ;
 }
 
-.thm_gray {
+.thm-gray {
   color: $color_gray;
 }
 
-.thmbg_red {
+.thmbg-red {
   background-color: $color_red;
 }
 
-.thmbg_yellow {
+.thmbg-yellow {
   background-color: $color_yellow;
 }
 
-.thmbg_nvblue {
+.thmbg-nvblue {
   background-color: $color_blue;
 }
 
-.thmbg_gray {
+.thmbg-gray {
   background-color: $color_gray;
 }
 
-.bg_lightgray,
+.bg-lightgray,
 .header .p-listbox .p-listbox-list .p-listbox-item.p-highlight {
   background-color: $light_white;
 }
 
-.bg_tranper {
+.bg-tranper {
   background-color: transparent !important;
 }
 
@@ -111,38 +114,38 @@ code {
 .fs-30{
   font-size: 30px;
 }
-.botm_border {
-  border-bottom: 1px solid $light_white;
-}
 
-.top-69 {
-  top: 65px;
+
+.top-64 {
+  top: 64px;
 }
 
 /* header */
 .header{
   padding: 4px 0px;
 }
-.logo_box {
+.logo-box {
   width: 198px;
   height: 40px;
 }
 
-.section_padding {
-  padding: 100px 0px;
+.section-padding {
+  padding: 70px 0px;
 }
-
+.section-title{
+  margin-bottom: 0px;
+}
 .container {
   padding: 0px 15px;
 }
 
-.details_text {
+.details-text {
   font-size: 18px;
   line-height: 33px;
   color: #1E1E1E;
 }
 
-.section_title {
+.section-title {
   font-size: 48px;
   font-weight: 500;
 }
@@ -199,13 +202,8 @@ code {
 
 }
 
-.right_column_border .border_column  {
-   border-right: 1px solid $light_white;
-}
-.right_column_border .border_column:last-child{
-  border:none
-}
-.arrow_size{
+
+.arrow-size{
   height: 38px;
   width: 38px;
   padding: 10px;
@@ -219,15 +217,100 @@ code {
   list-style: none;
 
 }
+.banner-text{
+  position: absolute;
+  left: 0px;
+  right:0px;
+  bottom:15px;
+  font-size: 75px;  
+  letter-spacing: 2px;
+
+}
+.banner-title{
+  font-size: 75px;
+}
+.banner-detail-text{
+  font-size: 25px;
+}
+.border-listing li{
+  margin-bottom: 30px;
+  border-bottom:1px solid $color_red
+}
+.arrow-listing h3{
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.arrow-listing p,.four-line-text,.two-line-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.arrow-listing p,.two-line-text{
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  min-height: 70px;
+}
+.four-line-text{
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  // min-height: 70px;
+}
+.overlay-icon i{
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom:0px;
+    width: 100%;
+    height: 100%;
+   
+}
+.listing-imgbox{
+  width: 192px;
+  height: 192px;
+}
+.inner-banner-text{
+  position: absolute;
+  bottom: 40px;
+  left: 3%;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator button{
+  border-radius: 100px;
+  background-color: transparent !important;
+  height: 15px;
+  width: 15px;
+  border:1px solid $color_red;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+  background-color: $color_red !important;
+
+}
+.video-box:hover{
+  cursor: pointer;
+}
+.video-box::before{
+  content: '';
+  position: absolute;
+  background-image: url('../public/media/vidoe_icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0px;
+  right: 0px;
+  bottom:4px;
+  top: 0px;
+  display: block;
+  background-color: rgba(0,0,0,0.2);
+}
 @media only screen and (min-width: 1170px) {
-  .container {
-    width: 1170px;
+  .container,.section-border-width {
+    width: 1280px;
     margin: 0px auto;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1169px) {
-  .container {
+  .container,.section-border-width  {
     width: 100%;
     margin: 15px auto;
   }

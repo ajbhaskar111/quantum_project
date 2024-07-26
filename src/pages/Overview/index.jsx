@@ -1,10 +1,11 @@
 import React from "react";
+import { Crumbs } from "molecules/Breadcrumbs";
 
 const Overview = () => {
   return (
-    <div className="text-center">
-      <h1>Overview Page</h1>
-    </div>
+    <>
+      <h2>Overview Page</h2>
+    </>
   );
 };
 
