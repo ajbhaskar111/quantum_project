@@ -10,6 +10,7 @@ import { DetailBox } from "molecules/DetailBox";
 import { ArrowButton } from "molecules/ArrowButton";
 import { SmallHadding } from "molecules/SmallHeadding";
 import { SectionBorder } from "molecules/SectionBorder";
+import { MainSlider } from "component/MainSlider";
 
 const Home = () => {
   const { homeSlider } = useSelector(
@@ -22,8 +23,8 @@ const Home = () => {
 
   const listindata = [
     {
-      listtitle: "3 billion sqft",
-      listdetail: "Area Serviced",
+      listtitle: "3 Billion sqft",
+      listdetail: "Area ",
     },
     {
       listtitle: "4400+",
@@ -72,7 +73,7 @@ const Home = () => {
               </div>
               <ArrowListing data={listindata} />
             </div>
-            <div className="lg:col-8 md:col-7 sm:col-12">
+            <div className="lg:col-7 md:col-7 sm:col-12 md:pl-6">
               <img
                 src="media/HomePageMap.png"
                 alt={"map-image"}
@@ -97,7 +98,7 @@ const Home = () => {
               <DetailBox
                 details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb...
 "
-                className="my-5 text-justify"
+                className="my-5 "
               />
               <ArrowButton
                 width="170"

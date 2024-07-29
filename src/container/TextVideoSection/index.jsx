@@ -11,9 +11,9 @@ export const TextVideoSection = () => {
         <div className="grid" style={{ borderColor: "#C82027" }}>
           <div className="lg:col-5 md:col-5 sm:col-12 align-items-center text-2xl">
             <h2 className="section-title ">
-              Real assets; advised,
+              Real assets;
               <br />
-              monitored and
+              advised, monitored and
               <br /> managed
             </h2>
           </div>
