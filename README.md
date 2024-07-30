@@ -68,3 +68,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+sudo apt-get --purge remove nginx-*
+sudo apt-get install nginx
+
+
+ pm2 start --name quantum_project npm -- start
+ 
+ cd /var/www/html/
+ 
+ 
+ 
+
+ 
+ sudo git clone https://github.com/ajbhaskar111/quantum_project.git
+ 
+ curl -s https://deb.nodesource.com/setup_16.x | sudo bash
+ 
+ sudo apt install nodejs -y
+ 
+ sudo vim /etc/nginx/site-avilable/default
+ 
+ 
+ location / {
+  
+	proxy_pass http://localhost:3000;
+	proxy_http_version 1.1;
+	proxy_set_header Upgrade $http_upgrade;
+	proxy_set_header Connection "upgrade";
+	proxy_set_header Host $host;
+	proxy_cache_bypass $http_upgrade; 
+ 
+ }
+ 
+ chmod g+x /ubuntu
+ 
+ 
+ passwd root 
