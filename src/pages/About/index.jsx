@@ -31,10 +31,11 @@ const About = () => {
       description:
         "Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb...",
       // image: "media/home_slider/blog-1-400x248 1.png",
-      video: [
-        "media/home_slider/blog-1-400x248 1.png",
-        "https://www.apollo.com/008dda46-7301-4387-bc6b-03343b468d4b",
-      ],
+      video: {
+        video_poster: "media/home_slider/blog-1-400x248 1.png",
+        video_url:
+          "https://www.taxmann.com/emailer/images/FEMA.mp4",
+      },
     },
     {
       title: "Lorem Ipsum is simply dummy text of the printing and...",

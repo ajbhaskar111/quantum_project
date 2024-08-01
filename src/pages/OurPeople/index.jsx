@@ -4,9 +4,10 @@ import { Crumbs } from "molecules/Breadcrumbs";
 import { SectionBorder } from "molecules/SectionBorder";
 import { TitleHeading } from "molecules/TitleHeading";
 import { TextVideoSection } from "container/TextVideoSection";
+import PeopleSlider from "./PeopleSlider";
 
 export const OurPeople = () => {
-  const sliderdata = [
+  const sliderdata = [ 
     {
       title: "Lorem Ipsum is simply dummy text of the printing and...",
       description:
@@ -51,7 +52,7 @@ export const OurPeople = () => {
             </div>
 
             <div className="lg:col-12 md:col-12 sm:col-12  mt-4">
-              {/* <MainSlider data={sliderdata}  /> */}
+              <PeopleSlider />
             </div>
           </div>
         </div>
