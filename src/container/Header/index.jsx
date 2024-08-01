@@ -5,7 +5,7 @@ export const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   return (
-    <header className="bg-white header border-bottom-1 border-red-700">
+    <header className="bg-gray header border-bottom-1 border-red-700">
       <div className="grid align-items-center">
         <div className="col-2 md:col-2 sm:col-4 pb-0">
           <button

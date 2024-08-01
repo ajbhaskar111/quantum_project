@@ -6,7 +6,7 @@ import React from "react";
 export const InnerBanner = (props) => {
   return (
     <>
-      <section className="inner-page-banner">
+      <section className="inner-page-banner ">
         <div className="container">
           <SmallHadding
             text={props.innertitle}
