@@ -1,30 +1,16 @@
 import { MainSlider } from "component/MainSlider";
 import { InnerBanner } from "container/InnerpageBanner";
 import { ArrowButton } from "molecules/ArrowButton";
-import { ArrowListing } from "molecules/ArrowListing";
+import { Card } from "primereact/card";
 import { BigImgBox } from "molecules/BigImgBox";
 import { Crumbs } from "molecules/Breadcrumbs";
 import { DetailBox } from "molecules/DetailBox";
-import { LocationMap } from "molecules/LocationMap";
+import { MidTitle } from "molecules/MidTitle";
 import { SectionBorder } from "molecules/SectionBorder";
 import { TitleHeading } from "molecules/TitleHeading";
 import React from "react";
 
 const About = () => {
-  const listindata2 = [
-    {
-      listtitle: "Mission Vision",
-      listdetail:
-        "Quantum is driven by its Vision statement: “To elevate the professional standards of the India",
-      listlink: "www.google.com",
-    },
-    {
-      listtitle: "Main USPs of workplace",
-      listdetail:
-        "Quantum is driven by its Vision statement: “To elevate the professional standards of the India",
-      listlink: "www.google.com",
-    },
-  ];
   const sliderdata = [
     {
       title: "Lorem Ipsum is simply dummy text of the printing and...",
@@ -33,8 +19,7 @@ const About = () => {
       // image: "media/home_slider/blog-1-400x248 1.png",
       video: {
         video_poster: "media/home_slider/blog-1-400x248 1.png",
-        video_url:
-          "https://www.taxmann.com/emailer/images/FEMA.mp4",
+        video_url: "https://www.taxmann.com/emailer/images/FEMA.mp4",
       },
     },
     {
@@ -127,7 +112,32 @@ const About = () => {
           <div className="grid">
             <div className="lg:col-5 md:col-5 sm:col-12 lg:col-offset-4 mt-4">
               <hr className="border-red-200" />
-              <ArrowListing data={listindata2} />
+              <div className="grid mt-4">
+                <div className="lg:col-12 md:col-12 sm:col-12">
+                  <Card className="border-1 border-red-500 ">
+                    <DetailBox
+                      className="m-0 "
+                      details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience”"
+                    />
+                  </Card>
+                </div>
+                <div className="lg:col-6 md:col-12 sm:col-12">
+                  <Card className="border-1 border-red-500 ">
+                    <DetailBox
+                      className="m-0"
+                      details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience”"
+                    />
+                  </Card>
+                </div>
+                <div className="lg:col-6 md:col-12 sm:col-12">
+                  <Card className="border-1 border-red-500 ">
+                    <DetailBox
+                      className="m-0"
+                      details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience”"
+                    />
+                  </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -186,9 +196,34 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="grid">
-            <div className="lg:col-3 md:col-4 sm:col-12 mt-4">
-              <LocationMap latdata={59.955413} langdata={30.337844} />
+          <div className="grid mt-6">
+            <div className="lg:col-3 md:col-6 sm:col-12 ">
+              <img src={"media/map-img.png"} alt="" className="img-fluid" />
+              <MidTitle
+                text="Mumbai"
+                className="text-center text-2xl font-medium mt-2 mb-0"
+              />
+            </div>
+            <div className="lg:col-3 md:col-6 sm:col-12 ">
+              <img src={"media/map-img.png"} alt="" className="img-fluid" />
+              <MidTitle
+                text="Pune"
+                className="text-center text-2xl font-medium mt-2 mb-0"
+              />
+            </div>
+            <div className="lg:col-3 md:col-6 sm:col-12 ">
+              <img src={"media/map-img.png"} alt="" className="img-fluid" />
+              <MidTitle
+                text="Bangalore"
+                className="text-center text-2xl font-medium mt-2 mb-0"
+              />
+            </div>
+            <div className="lg:col-3 md:col-6 sm:col-12 ">
+              <img src={"media/map-img.png"} alt="" className="img-fluid" />
+              <MidTitle
+                text="NCR"
+                className="text-center text-2xl font-medium mt-2 mb-0"
+              />
             </div>
           </div>
         </div>

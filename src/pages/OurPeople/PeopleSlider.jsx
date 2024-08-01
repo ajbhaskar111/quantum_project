@@ -92,12 +92,15 @@ const PeopleSlider = () => {
           <QuantamVideo item={item} />
         )}
 
-        <SmallHadding text={item?.title} className="my-2 cust-title" />
+        <SmallHadding
+          text={item?.title}
+          className="my-2 cust-title font-base font-medium text-center"
+        />
         {/* <p className="font-medium">{item.title}</p> */}
         <DetailBox
           details={item?.description}
           style={{ fontSize: 16 }}
-          className="my-2"
+          className="my-2 text-center"
         />
       </ItemTag>
     );
