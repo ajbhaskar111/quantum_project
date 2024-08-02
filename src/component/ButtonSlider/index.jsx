@@ -63,7 +63,10 @@ const ItemTag = styled.div`
 
 export const ButtonSlider = () => {
   const [first, setFirst] = useState(0);
-  const [rows, setRows] = useState(8);
+  const [rows, setRows] = useState(4);
+  const [activePage, setActivePage] = useState(0);
+
+  
 
   const sliderdata = [
     {
@@ -113,6 +116,7 @@ export const ButtonSlider = () => {
   const onPageChange = (event) => {
     setFirst(event.first);
     setRows(event.rows);
+    setActivePage(event?.page)
   };
 
   const itemTemplate = (item) => {
@@ -134,20 +138,15 @@ export const ButtonSlider = () => {
 
   return (
     <div className="container">
-      {/* <div className="grid">
-        {[1, 2, 3, 4].map(() => {
-          return itemTemplate(sliderdata);
-        })}
-      </div> */}
       <Carousel
         value={sliderdata}
+        page={activePage}
         numVisible={4}
         numScroll={1}
         responsiveOptions={responsiveSliderOptions}
         itemTemplate={itemTemplate}
         showIndicators={false}
         showNavigators={false}
-        autoplayInterval={5000}
         circular={true}
         style={{ backgroundColor: "transparent" }}
       />
@@ -171,15 +170,6 @@ export const ButtonSlider = () => {
               style={{ fontSize: "2rem" }}
             ></i>
           }
-          showCurrentPageReport={true}
-          currentPageReportTemplate={(options) => {
-            console.log(options);
-            return (
-              <span style={{ color: 'var(--text-color)', userSelect: 'none', width: '120px', textAlign: 'center' }}>
-                  {options.first} - {options.last} of {options.totalRecords}
-              </span>
-          );
-          }}
           template={{ layout: "PrevPageLink CurrentPageReport NextPageLink" }}
         />
       </div>
