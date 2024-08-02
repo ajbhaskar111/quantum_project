@@ -13,6 +13,7 @@ import { SectionBorder } from "molecules/SectionBorder";
 import { MainSlider } from "component/MainSlider";
 import { MidTitle } from "molecules/MidTitle";
 import PeopleSlider from "pages/OurPeople/PeopleSlider";
+import { ButtonSlider } from "component/ButtonSlider";
 
 const Home = () => {
   const { homeSlider } = useSelector(
@@ -330,9 +331,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="grid mt-4"></div>
+          <div className="grid mt-4">
+          <ButtonSlider/>
+          </div>
         </div>
       </section>
+    
+
     </>
   );
 };
