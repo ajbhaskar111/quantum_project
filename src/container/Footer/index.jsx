@@ -8,23 +8,27 @@ export const Footer = () => {
         <div className="container">
           <div className="grid">
             <div className="col-12">
-              <h2 className="section-title mb-3 mt-0">
+              <h2 className="section-title mb-5 mt-5">
                 Explore Real-Estate solutions for...
               </h2>
             </div>
             <div className="col-12">
               <div className="grid  align-items-center">
                 <div className="lg:col-4 md:col-4 sm:col-12 border-right-1">
-                  <h3 className="text-2xl font-normal mb-4 mt-2 ">Investors</h3>
+                  <h3 className="text-4xl font-normal mb-4 mt-2 ef-gamon-font">
+                    Investors
+                  </h3>
                   <ArrowLink url="" className="bg-white" />
                 </div>
                 <div className="lg:col-4 md:col-4 sm:col-12 border-right-1 pl-4">
-                  <h3 className="text-2xl font-normal mb-4 mt-2">Developers</h3>
+                  <h3 className="text-4xl font-normal mb-4 mt-2 ef-gamon-font">
+                    Developers
+                  </h3>
                   <ArrowLink url="" className="bg-white" />
                 </div>
                 <div className="lg:col-4 md:col-4 sm:col-12 pl-4">
-                  <h3 className="text-2xl font-normal mb-4 mt-2">
-                    Hovering societies & others
+                  <h3 className="text-4xl font-normal mb-4 mt-2 ef-gamon-font">
+                    Others
                   </h3>
                   <ArrowLink url="" className="bg-white" />
                 </div>

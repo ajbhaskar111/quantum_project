@@ -12,7 +12,7 @@ export const HomeSlider = (props) => {
             <h1 className="banner-title text-white ">
               Mastering
               <span
-                style={{ fontStyle: "italic", fontWeight: "600" }}
+                style={{ fontStyle: "italic" }}
                 className="mx-2 inline-block"
               >
                 real estate
@@ -20,7 +20,7 @@ export const HomeSlider = (props) => {
               complexities,
               <br /> shaping
               <span
-                style={{ fontStyle: "italic", fontWeight: "600" }}
+                style={{ fontStyle: "italic" }}
                 className="mx-2 inline-block"
               >
                 investments

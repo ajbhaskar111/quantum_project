@@ -55,7 +55,7 @@ const Slider1 = () => {
           showIndicators={false}
           showNavigators={false}
           autoplayInterval={3000}
-          circular={true}
+          circular={false}
           style={{ backgroundColor: "transparent" }}
         />
       </div>

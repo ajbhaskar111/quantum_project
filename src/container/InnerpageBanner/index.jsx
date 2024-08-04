@@ -6,7 +6,7 @@ import React from "react";
 export const InnerBanner = (props) => {
   return (
     <>
-      <section className="inner-page-banner">
+      <section className="inner-page-banner ">
         <div className="container">
           <SmallHadding
             text={props.innertitle}
@@ -15,7 +15,7 @@ export const InnerBanner = (props) => {
         </div>
         <SectionBorder className="bg-red" />
         <div className="container my-3">
-          <div className="inner-page-banner relative">
+          <div className="inner-page-banner relative flex">
             <img
               src="media/inner-page-banner.png"
               className="img-fluid relative"
