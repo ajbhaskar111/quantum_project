@@ -332,12 +332,10 @@ const Home = () => {
           </div>
 
           <div className="grid mt-4">
-          <ButtonSlider/>
+            <ButtonSlider />
           </div>
         </div>
       </section>
-    
-
     </>
   );
 };
