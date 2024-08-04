@@ -12,6 +12,7 @@ import Assing_managment from "./pages/Assing_managment";
 import { Header } from "./container/Header";
 import { Footer } from "./container/Footer";
 import { OurPeople } from "pages/OurPeople";
+import ContactUs from "pages/ContactUs";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="//our-people" element={<OurPeople />}></Route>
