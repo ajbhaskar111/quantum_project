@@ -17,7 +17,7 @@ const ContactUs = () => {
       title: "Investment Advisory",
       peoples: [
         {
-          name: "Amit Tindwani",
+          name: "Amit Tindwani", 
           email: "amit@123gmail.com",
         },
         {
