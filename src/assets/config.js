@@ -15,9 +15,14 @@ export const menuItem = [
         path: "/history",
       },
       {
-        id: 2,
+        id: 3,
         label: "Our People",
         path: "/our-people",
+      },
+      {
+        id: 4,
+        label: "Contact Us",
+        path: "/contact-us",
       },
     ],
   },
