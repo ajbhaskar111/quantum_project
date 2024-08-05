@@ -1,5 +1,7 @@
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 $color_red : #C82027;
 $color_yellow : #CDC08B;
@@ -303,6 +305,22 @@ code {
   top: 0px;
   display: block;
   background-color: rgba(0,0,0,0.2);
+}
+.red-active-link:hover,.red-active-link:active{
+  background-color: #C82027;
+  color:#fff !important;
+}
+.before-red-border li{
+  padding-right: 20px;
+}
+.before-red-border::before{
+  content: '';
+  background-color: #C82027;
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 20px;
 }
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {

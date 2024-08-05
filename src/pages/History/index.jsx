@@ -1,4 +1,5 @@
 import { Crumbs } from "molecules/Breadcrumbs";
+import { DetailBox } from "molecules/DetailBox";
 import { TitleHeading } from "molecules/TitleHeading";
 import { Button } from "primereact/button";
 import { Card } from "primereact/card";
@@ -6,15 +7,6 @@ import { ListBox } from "primereact/listbox";
 import { Timeline } from "primereact/timeline";
 import React, { useState } from "react";
 import styled from "styled-components";
-
-const CustomSpan = styled.span`
-  background: transparent;
-  padding-top: 0;
-  text-transform: uppercase;
-  color: #c82027;
-  font-weight: 800;
-  padding-left: 1rem;
-`;
 
 const CustomListBox = styled(ListBox)`
   border: 0;
@@ -56,20 +48,6 @@ const CustomTimeline = styled(Timeline)`
 `;
 
 const History = () => {
-  const [selectedYear, setSelectedYear] = useState({
-    label: "2027",
-    value: "2027",
-  });
-
-  const yearsList = [
-    { label: "2027", value: "2027" },
-    { label: "2026", value: "2026" },
-    { label: "2025", value: "2025" },
-    { label: "2024", value: "2024" },
-    { label: "2023", value: "2023" },
-    { label: "2022", value: "2022" },
-    { label: "2021", value: "2021" },
-  ];
   const events = [
     {
       id: "2027",
@@ -133,7 +111,10 @@ const History = () => {
   ];
   const customizedMarker = (item) => {
     return (
-      <span className="" style={{ backgroundColor: item.color }}>
+      <span
+        className="fs-18 font-medium"
+        style={{ backgroundColor: item.color }}
+      >
         {item?.id}
       </span>
     );
@@ -144,7 +125,7 @@ const History = () => {
       item &&
       item?.items.map((i, index) => {
         return (
-          <div key={index} className="w-8 pl-2 relative">
+          <div key={index} className="w-8 pl-2 relative" id={item.id}>
             <div className="border-left-1 pl-5">
               <div className="circled-dot"></div>
               <h3 className="font-medium mt-0 pt-2">{i?.header}</h3>
@@ -181,28 +162,39 @@ const History = () => {
             </div>
           </div>
           <div
-            className="my-5 border-top-1 border-bottom-1 py-5"
+            className="my-5 border-top-1 border-bottom-1 py-5 grid"
             style={{ borderColor: "#C82027" }}
           >
-            <div className="w-4 m-auto">
-              Quantum Projectinfra Pvt Ltd (Quantum) is a Real Estate Advisor
+            <div className=" lg:col-5 md:col-8 sm:col-12 m-auto">
+              <DetailBox
+                details=" Quantum Projectinfra Pvt Ltd (Quantum) is a Real Estate Advisor
               and Manager for End to End Asset Management. Quantum provides
               services on PAN India basis through its local office presence in
-              all major cities.
+              all major cities"
+                className="text-justify"
+              />
             </div>
           </div>
 
           <>
             <div className="grid">
-              <div className="col-2">
-                <CustomSpan>YEAR</CustomSpan>
-                <CustomListBox
-                  value={selectedYear}
-                  onChange={(e) => setSelectedYear(e.value)}
-                  options={yearsList}
-                  optionLabel="label"
-                  className="w-full"
-                />
+              <div className="col-2 ">
+                <h4 className="thm-red fs-18 font-medium uppercase">years</h4>
+                <ul className="listing before-red-border relative">
+                  {events.map((item, index) => (
+                    <li>
+                      <a
+                        className={`block p-3 no-underline fs-18 font-bold red-active-link text-black-alpha-90`}
+                        href={`#${item.id}`}
+                        onClick={(e) => {
+                          alert(item.id);
+                        }}
+                      >
+                        {item.id}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div className="col-10 mt-6">
                 <div className="card">

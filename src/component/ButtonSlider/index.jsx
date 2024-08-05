@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { TitleHeading } from "../../molecules/TitleHeading";
-import { ArrowButton } from "../../molecules/ArrowButton";
-import { DetailBox } from "../../molecules/DetailBox";
+// import { TitleHeading } from "../../molecules/TitleHeading";
+// import { ArrowButton } from "../../molecules/ArrowButton";
+// import { DetailBox } from "../../molecules/DetailBox";
 import { Carousel } from "primereact/carousel";
 import { responsiveSliderOptions } from "../../assets/config";
 import styled from "styled-components";
@@ -66,8 +66,6 @@ export const ButtonSlider = () => {
   const [rows, setRows] = useState(4);
   const [activePage, setActivePage] = useState(0);
 
-  
-
   const sliderdata = [
     {
       title: "Amit Tindwani 1",
@@ -116,7 +114,7 @@ export const ButtonSlider = () => {
   const onPageChange = (event) => {
     setFirst(event.first);
     setRows(event.rows);
-    setActivePage(event?.page)
+    setActivePage(event?.page);
   };
 
   const itemTemplate = (item) => {
