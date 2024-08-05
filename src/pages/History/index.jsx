@@ -170,7 +170,7 @@ const History = () => {
                 details=" Quantum Projectinfra Pvt Ltd (Quantum) is a Real Estate Advisor
               and Manager for End to End Asset Management. Quantum provides
               services on PAN India basis through its local office presence in
-              all major cities"
+              all cities"
                 className="text-justify"
               />
             </div>
