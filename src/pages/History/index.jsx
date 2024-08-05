@@ -204,7 +204,7 @@ const History = () => {
                   className="w-full"
                 />
               </div>
-              <div className="col-7 mt-6">
+              <div className="col-10 mt-6">
                 <div className="card">
                   <CustomTimeline
                     value={events}
