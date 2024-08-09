@@ -3,7 +3,7 @@ import { ArrowLink } from "../ArrowLink";
 
 export const ArrowListing = (props) => {
   return (
-    <ul className="listing border-listing arrow-listing">
+    <ul className={`listing border-listing arrow-listing ${props.className}`}>
       {props.data
         ? props.data.map((item, index) => (
             <li>

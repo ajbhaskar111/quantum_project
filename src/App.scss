@@ -118,8 +118,8 @@ code {
 }
 
 
-.top-64 {
-  top: 64px;
+.top-menu {
+  top: 99px;
 }
 
 /* header */
@@ -127,8 +127,8 @@ code {
   padding: 4px 0px;
 }
 .logo-box {
-  width: 198px;
-  height: 40px;
+  width: 80px;
+  height: auto;
 }
 
 .section-padding {
@@ -231,6 +231,7 @@ code {
 .banner-title{
   font-size: 73px;
   line-height: 79px;
+
 }
 .banner-detail-text{
   font-size: 23px;
@@ -321,6 +322,28 @@ code {
   display: block;
   position: absolute;
   right: 20px;
+}
+.bg-arro-tranparant{
+  background-color: transparent;
+  border: 1px solid #fff;
+
+}
+.bg-arro-tranparant.icon-link{
+  color: #fff !important;
+}
+.right-border-box::before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 160px;
+  position: absolute;
+ 
+  bottom:-8px;
+  left:0px;
+  background-color: #fff;
+}
+.map-label-listing li p.details-text{
+  min-height: auto;
 }
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {

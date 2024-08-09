@@ -4,33 +4,33 @@ import { ArrowLink } from "../../molecules/ArrowLink";
 export const Footer = () => {
   return (
     <footer className="footer-secition">
-      <div className="top-footer thmbg-nvblue py-4 text-white">
+      <div className="top-footer thmbg-nvblue py-2 text-white">
         <div className="container">
-          <div className="grid">
-            <div className="col-12">
+          <div className="grid align-items-end">
+            <div className="lg:col-4 md:col-5 sm:col-12">
               <h2 className="section-title mb-5 mt-5">
-                Explore Real-Estate solutions for...
+                Explore Real-Estate Solutions for...
               </h2>
             </div>
-            <div className="col-12">
+            <div className="lg:col-8 md:col-7 sm:col-12">
               <div className="grid  align-items-center">
-                <div className="lg:col-4 md:col-4 sm:col-12 border-right-1">
+                <div className="lg:col-4 md:col-4 sm:col-12 right-border-box relative md:pl-4">
                   <h3 className="text-4xl font-normal mb-4 mt-2 ef-gamon-font">
                     Investors
                   </h3>
-                  <ArrowLink url="" className="bg-white" />
+                  <ArrowLink url="" className="bg-arro-tranparant" />
                 </div>
-                <div className="lg:col-4 md:col-4 sm:col-12 border-right-1 pl-4">
+                <div className="lg:col-4 md:col-4 sm:col-12 right-border-box relative md:pl-4">
                   <h3 className="text-4xl font-normal mb-4 mt-2 ef-gamon-font">
                     Developers
                   </h3>
-                  <ArrowLink url="" className="bg-white" />
+                  <ArrowLink url="" className="bg-arro-tranparant" />
                 </div>
-                <div className="lg:col-4 md:col-4 sm:col-12 pl-4">
+                <div className="lg:col-4 md:col-4 sm:col-12 right-border-box relative md:pl-4">
                   <h3 className="text-4xl font-normal mb-4 mt-2 ef-gamon-font">
                     Others
                   </h3>
-                  <ArrowLink url="" className="bg-white" />
+                  <ArrowLink url="" className="bg-arro-tranparant" />
                 </div>
               </div>
             </div>

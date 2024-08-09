@@ -117,7 +117,7 @@ const Home = () => {
               <div className="section-title mb-5">
                 <TitleHeading title="Quantum History" className="m-0" />
               </div>
-              <ArrowListing data={listindata} />
+              <ArrowListing data={listindata} className="map-label-listing" />
             </div>
             <div className="lg:col-7 md:col-7 sm:col-12 md:pl-6">
               <img
