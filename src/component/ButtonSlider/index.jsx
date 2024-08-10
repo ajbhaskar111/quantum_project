@@ -128,7 +128,7 @@ export const ButtonSlider = () => {
 
         <SmallHadding
           text={item?.title}
-          className="my-2 cust-title font-base font-medium text-center"
+          className="my-2 cust-title font-base font-medium text-center no-underline"
         />
       </ItemTag>
     );

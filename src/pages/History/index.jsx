@@ -162,7 +162,7 @@ const History = () => {
             </div>
           </div>
           <div
-            className="my-5 border-top-1 border-bottom-1 py-5 grid"
+            className="my-5 border-top-1 border-bottom-1 py-0 grid"
             style={{ borderColor: "#C82027" }}
           >
             <div className=" lg:col-5 md:col-8 sm:col-12 m-auto">

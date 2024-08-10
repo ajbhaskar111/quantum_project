@@ -40,8 +40,14 @@ export const menuItem = [
         label: "Assignment Managment",
         path: "/assignmen_managment",
       },
+      {
+        id:3,
+        label:"Community Impact",
+        path: "/community_impect"
+      }
     ],
   },
+    
 ];
 
 export const  responsiveSliderOptions = [

@@ -7,7 +7,6 @@ import { DetailBox } from "../../molecules/DetailBox";
 import { QuantamVideo } from "container/QuantamVideo";
 
 export const MainSlider = (props) => {
-  
   const productTemplate = (item) => {
     return (
       <div className="text-justify p-3">
@@ -21,11 +20,11 @@ export const MainSlider = (props) => {
           <QuantamVideo item={item} />
         )}
 
-        <SmallHadding text={item.title} />
+        <SmallHadding text={item.title} className={`${props.titlecss}`} />
         {/* <p className="font-medium">{item.title}</p> */}
         <DetailBox
           details={item.description}
-          className="border-bottom-1 border-red-500 pb-4"
+          className={`border-bottom-1 border-red-500 ${props.detailcss}`}
         />
       </div>
     );

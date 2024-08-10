@@ -113,13 +113,13 @@ const Home = () => {
       <section className="map_sction section-padding">
         <div className="container">
           <div className="grid align-items-center">
-            <div className="lg:col-4 md:col-5 sm:col-12">
+            <div className="lg:col-5 md:col-5 sm:col-12">
               <div className="section-title mb-5">
-                <TitleHeading title="Quantum History" className="m-0" />
+                <TitleHeading title="Milestone History" className="m-0" />
               </div>
               <ArrowListing data={listindata} className="map-label-listing" />
             </div>
-            <div className="lg:col-7 md:col-7 sm:col-12 md:pl-6">
+            <div className="lg:col-7 md:col-7 sm:col-12 md:pl-6 flex justify-content-end">
               <img
                 src="media/HomePageMap.png"
                 alt={"map-image"}

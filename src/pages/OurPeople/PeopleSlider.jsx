@@ -94,7 +94,7 @@ const PeopleSlider = () => {
 
         <SmallHadding
           text={item?.title}
-          className="my-2 cust-title font-base font-medium text-center"
+          className="my-2 cust-title font-base font-medium text-center no-underline"
         />
         {/* <p className="font-medium">{item.title}</p> */}
         <DetailBox
