@@ -6,7 +6,7 @@ import styled from "styled-components";
 const CustDialog = styled(Dialog)`
   .p-dialog-content {
     padding: 0;
-    overflow:visible;
+    overflow: visible;
   }
 `;
 
@@ -16,8 +16,11 @@ export const QuantamVideo = (props) => {
   return (
     <div>
       <a onClick={() => setVisible(true)} className="block">
-        <div className="video-box relative">
-          <img src={props?.item?.video?.video_poster} className="w-full" />
+        <div className="video-box relative overflow-hidden">
+          <img
+            src={props?.item?.video?.video_poster}
+            className="w-full block"
+          />
         </div>
       </a>
 

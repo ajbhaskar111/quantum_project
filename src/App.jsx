@@ -13,6 +13,7 @@ import { Header } from "./container/Header";
 import { Footer } from "./container/Footer";
 import { OurPeople } from "pages/OurPeople";
 import ContactUs from "pages/ContactUs";
+import { CommunityImpect } from "pages/communityImpact";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="//our-people" element={<OurPeople />}></Route>
         <Route path="/history" element={<History />} />
         <Route path="/assignmen_managment" element={<Assing_managment />} />
+        <Route path="/community_impect" element={<CommunityImpect />} />
       </Routes>
       <Footer />
     </Router>

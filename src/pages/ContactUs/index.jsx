@@ -1,15 +1,10 @@
-import { MainSlider } from "component/MainSlider";
-import { InnerBanner } from "container/InnerpageBanner";
-import { ArrowButton } from "molecules/ArrowButton";
-import { Card } from "primereact/card";
-import { BigImgBox } from "molecules/BigImgBox";
 import { Crumbs } from "molecules/Breadcrumbs";
-import { DetailBox } from "molecules/DetailBox";
-import { MidTitle } from "molecules/MidTitle";
-import { SectionBorder } from "molecules/SectionBorder";
+
 import { TitleHeading } from "molecules/TitleHeading";
 import React from "react";
 import { Image } from "primereact/image";
+import { SmallHadding } from "molecules/SmallHeadding";
+import { DetailBox } from "molecules/DetailBox";
 
 const ContactUs = () => {
   let arrayItems = [
@@ -17,7 +12,7 @@ const ContactUs = () => {
       title: "Investment Advisory",
       peoples: [
         {
-          name: "Amit Tindwani", 
+          name: "Amit Tindwani",
           email: "amit@123gmail.com",
         },
         {
@@ -88,27 +83,28 @@ const ContactUs = () => {
               <TitleHeading title="Contact-Us" className="mt-0 mb-3" />
             </div>
           </div>
-          <div
-            className="my-5 border-top-1 border-bottom-1 py-5"
-            style={{ borderColor: "#C82027" }}
-          >
-            <div className="w-auto" style={{ backgroundColor: "#4E6766" }}>
-              <div className="grid p-5">
-                <div className="col-6 text-white flex align-content-center flex-wrap">
-                  <div className="flex align-content-center flex-wrap flex-column">
-                    <div className="flex align-items-center mb-4 text-3xl">
-                      Quantum Realty Headquarters
-                    </div>
-                    <div className="flex align-items-center text-base mb-4">
-                      A-412A, Boomerang Building, Chandivali, Andheri East,
-                      Mumbai, Maharashtra 400072
-                    </div>
-                    <div className="flex align-items-center text-sm">
-                      <i className="pi pi-phone mr-2"></i> 022 6758 1700
-                    </div>
+          <div className="my-5 border-top-1 border-bottom-1 py-3 border-red-600 flex">
+            <div style={{ backgroundColor: "#4E6766" }} className="w-full">
+              <div className="grid p-5 align-items-center">
+                <div className="lg:col-5 md:col-6 sm:col-12 text-white">
+                  <SmallHadding
+                    text="Quantum Realty Headquarters"
+                    className="mb-4 text-4xl eb-garamond-font"
+                  />
+
+                  <div className="flex align-items-center text-base mb-4">
+                    <DetailBox
+                      details=" A-412A, Boomerang Building, Chandivali, Andheri East,
+                      Mumbai, Maharashtra 400072"
+                      className="text-white w-19rem"
+                    />
+                  </div>
+                  <div className="flex align-items-center text-sm">
+                    <i className="pi pi-phone mr-2"></i>
+                    <span className="text-xl">022 6758 1700</span>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="lg:col-7 md:col-6 sm:col-12">
                   <Image
                     src="media/Rectangle 33.png"
                     alt="Image"
@@ -121,23 +117,25 @@ const ContactUs = () => {
         </div>
       </section>
       <section>
-        <div className="container">
+        <div className="container last-border-none">
           {arrayItems &&
             arrayItems.map((item) => {
               return (
                 <>
-                  <div className="grid mb-5 border-bottom-1 pb-5">
-                    <div className="col-6 text-center text-2xl">
-                      {item?.title}
+                  <div className="grid mb-5 border-bottom-1 pb-5 ">
+                    <div className="col-6  text-xl">
+                      <TitleHeading title={item?.title} />
                     </div>
-                    <div className="col-6 text-base">
-                      {item?.topText}
+                    <div className="col-6">
+                      <DetailBox details={item?.topText} />
                       {item?.peoples.map((p) => {
                         return (
                           <div className="mb-4">
-                            <p className="mb-1">{p?.name}</p>
+                            <p className="mb-1 text-2xl text-black-alpha-90">
+                              {p?.name}
+                            </p>
                             <p
-                              className="text-sm mt-2"
+                              className="fs-17 mt-2 font-medium"
                               style={{ color: "#C82027" }}
                             >
                               {p?.email}
@@ -145,7 +143,10 @@ const ContactUs = () => {
                           </div>
                         );
                       })}
-                      {item?.bottomText}
+                      <DetailBox
+                        details={item?.bottomText}
+                        className="font-medium"
+                      />
                     </div>
                   </div>
                 </>

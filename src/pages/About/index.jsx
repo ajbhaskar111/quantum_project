@@ -13,7 +13,7 @@ import React from "react";
 const About = () => {
   const sliderdata = [
     {
-      title: "Lorem Ipsum is simply dummy text of the printing and...",
+      title: "Amit Gupta",
       description:
         "Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb...",
       // image: "media/home_slider/blog-1-400x248 1.png",
@@ -23,19 +23,19 @@ const About = () => {
       },
     },
     {
-      title: "Lorem Ipsum is simply dummy text of the printing and...",
+      title: "Amit Tindwani",
       description:
         "Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb...",
       image: "media/home_slider/blog-1-400x248 1 (1).png",
     },
     {
-      title: "Lorem Ipsum is simply dummy text of the printing and...",
+      title: "Udai Goyal",
       description:
         "Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb...",
       image: "media/home_slider/blog-1-400x248 1.png",
     },
     {
-      title: "Lorem Ipsum is simply dummy text of the printing and...",
+      title: "Amit Gupta",
       description:
         "Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb...",
       image: "media/home_slider/blog-1-400x248 1 (2).png",
@@ -51,28 +51,33 @@ const About = () => {
       <section className="section-padding">
         <div className="container">
           <div className="grid section-title">
-            <div className="lg:col-4 md:col-3 sm:col-12">
+            <div className="lg:col-4 md:col-5 sm:col-12">
               <TitleHeading title="Our Journey" className="mt-0 mb-3" />
             </div>
-            <div className="lg:col-5 md:col-5 sm:col-12">
-              <DetailBox
-                details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb  the professional standards of the Indian realty sector by 
+            <div className="lg:col-8 md:col-7 sm:col-12">
+              <div className="grid">
+                <div className="lg:col-12 md:col-12 sm:col-12">
+                  <DetailBox
+                    details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience” Quantum imb  the professional standards of the Indian realty sector by 
 "
-                className="four-line-text text-justify mt-0 mb-3"
-              />
-            </div>
-            <div className="lg:col-3 md:col-4 sm:col-12 ">
-              <div className="flex justify-content-end">
-                <ArrowButton
-                  width="170"
-                  buttonText="Our History"
-                  bgColor="#CDC08B"
-                  textColor="#000000"
-                  url="/"
-                  className="ml-0"
-                />
+                    className="four-line-text text-justify mt-0 mb-3"
+                  />
+                </div>
+                <div className="lg:col-12 md:col-12 sm:col-12 ">
+                  <div className="flex justify-content-start">
+                    <ArrowButton
+                      width="170"
+                      buttonText="Our History"
+                      bgColor="#CDC08B"
+                      textColor="#000000"
+                      url="/"
+                      className="ml-0"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
+
             <div className="lg:col-8 md:col-12 sm:col-12 lg:col-offset-4 mt-4">
               <BigImgBox imgpath="media/about_banner.png" />
             </div>
@@ -114,25 +119,25 @@ const About = () => {
               <hr className="border-red-200" />
               <div className="grid mt-4">
                 <div className="lg:col-12 md:col-12 sm:col-12">
-                  <Card className="border-1 border-red-500 ">
+                  <Card className=" thmbg-nvblue">
                     <DetailBox
-                      className="m-0 "
+                      className="m-0 text-white"
                       details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience”"
                     />
                   </Card>
                 </div>
                 <div className="lg:col-6 md:col-12 sm:col-12">
-                  <Card className="border-1 border-red-500 ">
+                  <Card className="thmbg-nvblue ">
                     <DetailBox
-                      className="m-0"
+                      className="m-0 text-white"
                       details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience”"
                     />
                   </Card>
                 </div>
                 <div className="lg:col-6 md:col-12 sm:col-12">
-                  <Card className="border-1 border-red-500 ">
+                  <Card className="thmbg-nvblue">
                     <DetailBox
-                      className="m-0"
+                      className="m-0 text-white"
                       details="Quantum is driven by its Vision statement: “To elevate the professional standards of the Indian realty sector by creating projects that deliver the best value and experience”"
                     />
                   </Card>
@@ -170,7 +175,7 @@ const About = () => {
           </div>
           <div className="grid">
             <div className="lg:col-12 md:col-12 sm:col-12 mt-4">
-              <MainSlider data={sliderdata} />
+              <MainSlider data={sliderdata} titlecss="text-center" />
             </div>
           </div>
         </div>

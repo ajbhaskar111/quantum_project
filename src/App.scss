@@ -21,13 +21,16 @@ body,
   margin: 0;
   font-family: 'Avenir' !important;
   background-color: $light_white;
+  font-weight: 400;
 
 }
 
 .avenir-font{
   font-family: $avenir !important;
 }
-
+.eb-garamond-font{
+  font-family: $ef_gramon_font !important;
+}
 h1,
 h2,.ef-gamon-font {
   font-family: $ef_gramon_font !important;
@@ -118,8 +121,8 @@ code {
 }
 
 
-.top-64 {
-  top: 64px;
+.top-menu {
+  top: 99px;
 }
 
 /* header */
@@ -127,8 +130,8 @@ code {
   padding: 4px 0px;
 }
 .logo-box {
-  width: 198px;
-  height: 40px;
+  width: 80px;
+  height: auto;
 }
 
 .section-padding {
@@ -231,6 +234,7 @@ code {
 .banner-title{
   font-size: 73px;
   line-height: 79px;
+
 }
 .banner-detail-text{
   font-size: 23px;
@@ -245,9 +249,9 @@ code {
   font-weight: 600;
   margin-top: 10px;
 }
-.arrow-listing p,.four-line-text,.two-line-text{
+.arrow-listing p,.four-line-text,.two-line-text,.three-line-text{
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis;  
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
@@ -259,6 +263,16 @@ code {
 .four-line-text{
   -webkit-line-clamp: 4; /* number of lines to show */
   line-clamp: 4;
+
+ line-height: 35px;
+
+
+//  margin-bottom: 50px;
+
+}
+.three-line-text{
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
   // min-height: 70px;
 }
 .overlay-icon i{
@@ -301,7 +315,7 @@ code {
   background-position: center;
   left: 0px;
   right: 0px;
-  bottom:4px;
+  bottom:0px;
   top: 0px;
   display: block;
   background-color: rgba(0,0,0,0.2);
@@ -321,6 +335,41 @@ code {
   display: block;
   position: absolute;
   right: 20px;
+}
+.bg-arro-tranparant{
+  background-color: transparent;
+  border: 1px solid #fff;
+
+}
+.bg-arro-tranparant.icon-link{
+  color: #fff !important;
+}
+.right-border-box::before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 160px;
+  position: absolute;
+ 
+  bottom:-8px;
+  left:0px;
+  background-color: #fff;
+}
+.map-label-listing li p.details-text{
+  min-height: auto;
+}
+.last-border-none .border-bottom-1:last-child{
+  border: none;
+}
+.icon-box{
+  height: 52px;
+  width: 52px;
+}
+.slider-box{
+  margin-right: 15px;
+}
+.p-carousel-items-container{
+  transform: translate3d(-99%, 0px, 0px) ;
 }
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {

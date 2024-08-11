@@ -119,7 +119,7 @@ export const ButtonSlider = () => {
 
   const itemTemplate = (item) => {
     return (
-      <ItemTag className="text-justify p-3">
+      <ItemTag className="text-justify slider-box">
         {item?.image ? (
           <img src={item?.image} className="w-full" />
         ) : (
@@ -128,7 +128,7 @@ export const ButtonSlider = () => {
 
         <SmallHadding
           text={item?.title}
-          className="my-2 cust-title font-base font-medium text-center"
+          className="my-2 cust-title font-base font-medium text-center no-underline"
         />
       </ItemTag>
     );
