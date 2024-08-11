@@ -16,11 +16,14 @@ $avenir : "Avenir";
 a.icon-link{
   color: $color_gray !important;
 }
+body{
+  background-color: $light_white;
+}
 body,
 .p-component {
   margin: 0;
   font-family: 'Avenir' !important;
-  background-color: $light_white;
+
   font-weight: 400;
 
 }
@@ -105,10 +108,15 @@ code {
   width: 100%;
   height: auto;
 }
-
+.p-breadcrumb{
+  background-color: transparent;
+}
 /* font-size */
 .fs-17{
   font-size: 17px;
+}
+.fs-21{
+  font-size: 21px;
 }
 .fs-25 {
   font-size: 25px;
@@ -370,6 +378,24 @@ code {
 }
 .p-carousel-items-container{
   transform: translate3d(-99%, 0px, 0px) ;
+}
+.testimonial-section{overflow: hidden;}
+.testimonial-user-box{
+  width:496px;
+  height: 415px;
+}
+.testimonial-section::before{
+  content: '';
+  height: 600px;
+  width: 600px;
+  background-color: $color_yellow ;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  // z-index: -1;
+  top:120px;
+  left: -63px;
+
 }
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {

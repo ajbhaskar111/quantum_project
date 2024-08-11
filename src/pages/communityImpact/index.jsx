@@ -8,6 +8,7 @@ import { DetailBox } from "molecules/DetailBox";
 import { SectionBorder } from "molecules/SectionBorder";
 import { TitleHeading } from "molecules/TitleHeading";
 import React from "react";
+import { TestimonialSection } from "./testimonial";
 
 export const CommunityImpect = () => {
   const manage_data = [
@@ -138,10 +139,8 @@ export const CommunityImpect = () => {
           </div>
         </div>
       </section>
-      <section className="section-padding thmbg-nvblue text-white">
-        <div className="grid">
-          <div className="lg:col-4 md:col-5 sm:col-12"></div>
-        </div>
+      <section className="section-padding thmbg-nvblue text-white pb-0 testimonial-section relative">
+        <TestimonialSection />
       </section>
       <section className="section-padding">
         <div className="container">
