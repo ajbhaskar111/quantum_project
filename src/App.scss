@@ -365,6 +365,12 @@ code {
   height: 52px;
   width: 52px;
 }
+.slider-box{
+  margin-right: 15px;
+}
+.p-carousel-items-container{
+  transform: translate3d(-99%, 0px, 0px) ;
+}
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {
     width: 1280px;
