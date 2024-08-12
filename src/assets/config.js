@@ -47,6 +47,23 @@ export const menuItem = [
       }
     ],
   },
+  {
+    id: 3,
+    label: "Social", 
+    items: [
+      {
+        id: 1,
+        label: "Social Responsibility",
+        path: "/social_responsibility",
+      },
+      {
+        id: 2,
+        label: "Clients",
+        path: "/clients",
+      }
+      
+    ],
+  },
     
 ];
 

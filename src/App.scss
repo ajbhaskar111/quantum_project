@@ -128,6 +128,10 @@ code {
   font-size: 30px;
 }
 
+.fw-500{
+  font-weight: 500;
+}
+
 
 .top-menu {
   top: 99px;
@@ -396,6 +400,47 @@ code {
   top:120px;
   left: -63px;
 
+}
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon{
+  order: 2;
+}
+.p-accordion .p-accordion-content{
+ border:none;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link{
+  border-top:1px solid #1E1E1E;
+  border-radius: 0px;
+  border-left:0px;
+  border-right:0px;
+  border-bottom:0px;
+  
+}
+.p-accordion .p-accordion-header .p-accordion-header-link,.p-accordion .p-accordion-content{
+  background-color: transparent;
+
+}
+.p-accordion-content{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.p-accordion-header-text{
+  font-weight: 500;
+  font-size: 25px;
+  color: #000 !important;
+  padding: 7px 0px;
+}
+.small-red-line{
+  padding-left: 15px;
+}
+.small-red-line::before{
+  content: '';
+  background-color: #C82027;
+  width: 100px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {

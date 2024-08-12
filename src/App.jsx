@@ -14,6 +14,8 @@ import { Footer } from "./container/Footer";
 import { OurPeople } from "pages/OurPeople";
 import ContactUs from "pages/ContactUs";
 import { CommunityImpect } from "pages/communityImpact";
+import { SocialResponsibility } from "pages/SocialResponsibility";
+import { Clients } from "pages/clients";
 
 const App = () => {
   return (
@@ -28,6 +30,11 @@ const App = () => {
         <Route path="/history" element={<History />} />
         <Route path="/assignmen_managment" element={<Assing_managment />} />
         <Route path="/community_impect" element={<CommunityImpect />} />
+        <Route
+          path="/social_responsibility"
+          element={<SocialResponsibility />}
+        />
+        <Route path="/clients" element={<Clients />} />
       </Routes>
       <Footer />
     </Router>
