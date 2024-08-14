@@ -64,6 +64,19 @@ export const menuItem = [
       
     ],
   },
+  {
+    id: 4,
+    label: "Insights & News", 
+    items: [
+      {
+        id: 1,
+        label: "Insights",
+        path: "/insights",
+      },
+    
+      
+    ],
+  },
     
 ];
 
