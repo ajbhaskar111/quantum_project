@@ -19,6 +19,7 @@ export const ArrowButton = (props) => {
             backgroundColor: props.bgColor,
             width: "38px",
             height: "38px",
+            color: props?.arrowColor,
           }}
         >
           <i

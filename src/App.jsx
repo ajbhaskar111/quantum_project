@@ -16,6 +16,7 @@ import ContactUs from "pages/ContactUs";
 import { CommunityImpect } from "pages/communityImpact";
 import { SocialResponsibility } from "pages/SocialResponsibility";
 import { Clients } from "pages/clients";
+import { Insights } from "pages/insights";
 
 const App = () => {
   return (
@@ -26,10 +27,13 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/overview" element={<Overview />} />
-        <Route path="//our-people" element={<OurPeople />}></Route>
+        <Route path="/our-people" element={<OurPeople />}></Route>
         <Route path="/history" element={<History />} />
         <Route path="/assignmen_managment" element={<Assing_managment />} />
         <Route path="/community_impect" element={<CommunityImpect />} />
+        <Route path="/insights" element={<Insights />} />
+
+        
         <Route
           path="/social_responsibility"
           element={<SocialResponsibility />}
