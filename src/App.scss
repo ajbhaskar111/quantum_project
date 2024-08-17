@@ -443,6 +443,39 @@ code {
   bottom: 0px;
   left: 0px;
 }
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight{
+  background-color: rgba(200,32,39,0.28);
+}
+.p-multiselect-select-all{
+  .p-checkbox.p-highlight .p-checkbox-box{
+    background-color: #C82027 !important;
+    border-color: #C82027 !important;
+  }
+}
+.p-multiselect-items.p-component{
+  background-color: #F5F4F1 !important;
+  .p-multiselect-item{
+    border-bottom:1px solid rgba(0,0,0,0.28);
+    .p-checkbox.p-component{
+      margin-right: 8px;
+   
+      
+ }
+ .p-checkbox.p-highlight .p-checkbox-box{
+  background-color: #C82027 !important;
+  border-color: #C82027 !important;
+ }
+ .p-checkbox .p-checkbox-input{
+  border-radius: 0px !important;
+
+}
+ span{
+  color: #424242;
+  font-size: 19px;
+ }
+  }
+ 
+}
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {
     width: 1280px;

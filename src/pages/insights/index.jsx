@@ -104,14 +104,14 @@ export const Insights = () => {
                   <div className="flex align-items-center text-base mb-4">
                     <DetailBox
                       details=" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Ind..."
-                      className="text-white"
+                      className="text-white fs-30"
                     />
                   </div>
                   <ArrowButton
                     width="170"
                     buttonText="Read more"
                     arrowColor="#000"
-                    bgColor="#FFF"
+                    bgColor="#CDC08B"
                     textColor="#FFF"
                     url="/"
                     className="ml-0"
@@ -125,8 +125,8 @@ export const Insights = () => {
 
       <section className="section-padding">
         <div className="container">
-          <div className="grid pl-3">
-            <div className="col-3">
+          <div className="grid align-items-center">
+            <div className="lg:col-3 md:col-6 sm:col-12">
               <div
                 className="flex align-items-center"
                 style={{
@@ -135,12 +135,12 @@ export const Insights = () => {
                   paddingLeft: "1rem",
                 }}
               >
-                <i className="pi pi-filter mr-2"></i>
-                <span className="text-lg">Filter</span>
+                <i className="pi pi-sliders-h mr-2"></i>
+                <span className="text-lg s-25">Filter</span>
               </div>
             </div>
 
-            <div className="col-3">
+            <div className="lg:col-3 md:col-6 sm:col-12">
               <CustDropdown
                 multiple={true}
                 value={selectedStrategies}
@@ -148,7 +148,7 @@ export const Insights = () => {
                 options={strategies}
                 optionLabel="name"
                 placeholder="Select a Strategies"
-                className="w-full md:w-14rem"
+                className="w-full "
                 checkmark={true}
                 highlightOnSelect={false}
                 style={{
@@ -158,7 +158,7 @@ export const Insights = () => {
               />
             </div>
 
-            <div className="col-3">
+            <div className="lg:col-3 md:col-6 sm:col-12">
               <CustDropdown
                 multiple={true}
                 value={selectedStrategies}
@@ -166,7 +166,7 @@ export const Insights = () => {
                 options={strategies}
                 optionLabel="name"
                 placeholder="Select a Formats"
-                className="w-full md:w-14rem"
+                className="w-full"
                 checkmark={true}
                 highlightOnSelect={false}
                 style={{
@@ -176,7 +176,7 @@ export const Insights = () => {
               />
             </div>
 
-            <div className="col-3">
+            <div className="lg:col-3 md:col-6 sm:col-12">
               <CustDropdown
                 multiple={true}
                 value={selectedStrategies}
@@ -184,7 +184,7 @@ export const Insights = () => {
                 options={strategies}
                 optionLabel="name"
                 placeholder="Select a Topics"
-                className="w-full md:w-14rem"
+                className="w-full "
                 checkmark={true}
                 highlightOnSelect={false}
                 style={{
@@ -195,7 +195,7 @@ export const Insights = () => {
             </div>
           </div>
 
-          <div className="grid">
+          <div className="grid mt-5">
             <div className="lg:col-12 md:col-12 sm:col-12  mt-4">
               <ItemSlider />
             </div>

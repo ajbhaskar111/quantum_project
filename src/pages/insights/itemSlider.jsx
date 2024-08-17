@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { TitleHeading } from "../../molecules/TitleHeading";
-import { ArrowButton } from "../../molecules/ArrowButton";
+
 import { DetailBox } from "../../molecules/DetailBox";
-import { Carousel } from "primereact/carousel";
-import { responsiveSliderOptions } from "../../assets/config";
+
 import { QuantamVideo } from "container/QuantamVideo";
 import { SmallHadding } from "molecules/SmallHeadding";
 import { Paginator } from "primereact/paginator";
@@ -105,31 +103,32 @@ const ItemSlider = () => {
 
   const itemTemplate = (item) => {
     return (
-      <ItemTag className="col-3 text-justify p-3">
-        {item?.image ? (
-          <img
-            src={item?.image}
-            //alt={product.name}
-            className="w-full"
-          />
-        ) : (
-          <QuantamVideo item={item} />
-        )}
+      <div className="lg:col-4 md:col-6 sm:col-12">
+        <ItemTag>
+          {item?.image ? (
+            <img
+              src={item?.image}
+              //alt={product.name}
+              className="w-full"
+            />
+          ) : (
+            <QuantamVideo item={item} />
+          )}
 
-        {item?.title && (
-          <SmallHadding
-            text={item?.title}
-            className="my-2 cust-title font-base font-medium text-center no-underline"
-          />
-        )}
-        {item?.description && (
-          <DetailBox
-            details={item?.description}
-            style={{ fontSize: 16 }}
-            className=" text-justify m-0 line-height-3"
-          />
-        )}
-      </ItemTag>
+          {item?.title && (
+            <SmallHadding
+              text={item?.title}
+              className="my-2 cust-title font-base font-medium text-center no-underline"
+            />
+          )}
+          {item?.description && (
+            <DetailBox
+              details={item?.description}
+              className="m-0 line-height-3 two-line-text mb-2"
+            />
+          )}
+        </ItemTag>
+      </div>
     );
   };
 
