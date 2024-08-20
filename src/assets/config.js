@@ -77,6 +77,29 @@ export const menuItem = [
       
     ],
   },
+  {
+    id: 5,
+    label: "Services", 
+    items: [
+      {
+        id: 1,
+        label: "Investor Services",
+        path: "/investor-services",
+      },
+      {
+        id: 2,
+        label: "Developer Services",
+        path: "/developer-services",
+      },
+      {
+        id: 3,
+        label: "Other Services",
+        path: "/other-services",
+      },
+    
+      
+    ],
+  },
     
 ];
 

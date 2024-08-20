@@ -1,14 +1,17 @@
 import React from "react";
 
 export const SectionBorder = (props) => {
+  const opicity = {
+    opicity: 1,
+    borderBottom: "1.2px solid",
+  };
   return (
-    <div className="container">
-      <hr
-        type="solid"
-        className={`${
-          props.className === "bg-red" ? "border-red-300" : "border-black-800"
-        }  my-0  w-full`}
-      />
-    </div>
+    <div
+      type="solid"
+      className={`${
+        props.className === "bg-red" ? "border-red-500" : "border-black-900"
+      }  my-0  w-full`}
+      style={opicity}
+    ></div>
   );
 };

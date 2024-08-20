@@ -102,7 +102,10 @@ export const CommunityImpect = () => {
           </div>
         </div>
       </section>
-      <SectionBorder />
+      <div className="container">
+        <SectionBorder />
+      </div>
+
       <section className="section-padding ">
         <div className="container">
           <div className="grid section-title">
