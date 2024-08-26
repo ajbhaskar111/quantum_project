@@ -1,11 +1,8 @@
-import { InnerBanner } from "container/InnerpageBanner";
 import { Crumbs } from "molecules/Breadcrumbs";
 import { TitleHeading } from "molecules/TitleHeading";
 import React, { useState } from "react";
-import { Accordion, AccordionTab } from "primereact/accordion";
 import { SmallHadding } from "molecules/SmallHeadding";
 import { DetailBox } from "molecules/DetailBox";
-import { Image } from "primereact/image";
 import { ArrowButton } from "molecules/ArrowButton";
 import ItemSlider from "./itemSlider";
 import styled from "styled-components";
@@ -19,56 +16,6 @@ const CustDropdown = styled(MultiSelect)`
 `;
 
 export const Insights = () => {
-  const clientdata = [
-    {
-      id: 1,
-      client_name: "CGI",
-      category: "",
-      image_path: "/media/home_slider/client_box.png",
-    },
-    {
-      id: 2,
-      client_name: "CGI",
-      category: "ARC",
-      image_path: "/media/home_slider/client_box-1.png",
-    },
-    {
-      id: 3,
-      client_name: "CGI",
-      category: "ARC",
-      image_path: "/media/home_slider/3_1.png",
-    },
-    {
-      id: 4,
-      client_name: "CGI",
-      category: "ARC",
-      image_path: "/media/home_slider/4_1.png",
-    },
-    {
-      id: 1,
-      client_name: "CGI",
-      category: "",
-      image_path: "/media/home_slider/client_box.png",
-    },
-    {
-      id: 2,
-      client_name: "CGI",
-      category: "Banks",
-      image_path: "/media/home_slider/client_box-1.png",
-    },
-    {
-      id: 3,
-      client_name: "CGI",
-      category: "Banks",
-      image_path: "/media/home_slider/3_1.png",
-    },
-    {
-      id: 4,
-      client_name: "CGI",
-      category: "Banks",
-      image_path: "/media/home_slider/4_1.png",
-    },
-  ];
 
   const [selectedStrategies, setSelectedStrategies] = useState(null);
   const strategies = [

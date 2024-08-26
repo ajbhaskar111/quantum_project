@@ -107,7 +107,7 @@ export const Footer = () => {
                 </li>
                 <li className="mb-3">
                   <a
-                    href="/"
+                    href="/careers"
                     className="text-white no-underline fs-17 font-normal"
                   >
                     Careers
