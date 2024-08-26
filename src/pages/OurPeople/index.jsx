@@ -7,7 +7,7 @@ import { TextVideoSection } from "container/TextVideoSection";
 import PeopleSlider from "./PeopleSlider";
 
 export const OurPeople = () => {
-  const sliderdata = [ 
+  const sliderdata = [
     {
       title: "Lorem Ipsum is simply dummy text of the printing and...",
       description:

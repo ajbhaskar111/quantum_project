@@ -84,7 +84,10 @@ const About = () => {
           </div>
         </div>
       </section>
-      <SectionBorder className="border-black-alpha-80" />
+      <div className="container">
+        <SectionBorder className="border-black-alpha-80" />
+      </div>
+
       <section className="section-padding">
         <div className="container">
           <div className="grid section-title">
@@ -147,7 +150,10 @@ const About = () => {
           </div>
         </div>
       </section>
-      <SectionBorder className="border-black-alpha-80" />
+      <div className="container">
+        <SectionBorder className="border-black-alpha-80" />
+      </div>
+
       <section className="section-padding">
         <div className="container">
           <div className="grid section-title">
@@ -180,7 +186,9 @@ const About = () => {
           </div>
         </div>
       </section>
-      <SectionBorder className="border-black-alpha-80" />
+      <div className="container">
+        <SectionBorder className="border-black-alpha-80" />
+      </div>
       <section className="section-padding">
         <div className="container">
           <div className="grid section-title">

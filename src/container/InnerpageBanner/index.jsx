@@ -13,9 +13,10 @@ export const InnerBanner = (props) => {
             className="text-5xl mt-2 mb-4 ef-gamon-font"
           />
         </div>
-        <SectionBorder className="bg-red" />
+
         <div className="container my-3">
-          <div className="inner-page-banner relative flex">
+          <SectionBorder className="bg-red" />
+          <div className="inner-page-banner relative flex my-3">
             <img
               src="media/inner-page-banner.png"
               className="img-fluid relative"
@@ -28,8 +29,8 @@ export const InnerBanner = (props) => {
               </div>
             </div>
           </div>
+          <SectionBorder className="bg-red" />
         </div>
-        <SectionBorder className="bg-red" />
       </section>
     </>
   );

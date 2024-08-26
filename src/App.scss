@@ -476,6 +476,18 @@ code {
   }
  
 }
+.p-accordion{
+  .p-accordion-tab{
+   
+    .p-accordion-header-link{
+      padding: 20px 15px;
+    }
+    .p-accordion-content{
+      padding: 0px;
+    }
+  }
+}
+
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {
     width: 1280px;

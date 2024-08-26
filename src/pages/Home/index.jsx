@@ -108,8 +108,9 @@ const Home = () => {
       <section className="video-section">
         <TextVideoSection />
       </section>
-      <SectionBorder />
-      <div className="container"></div>
+      <div className="container">
+        <SectionBorder />
+      </div>
       <section className="map_sction section-padding">
         <div className="container">
           <div className="grid align-items-center">
