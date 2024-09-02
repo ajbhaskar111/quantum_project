@@ -18,8 +18,11 @@ import { SocialResponsibility } from "pages/SocialResponsibility";
 import { Clients } from "pages/clients";
 import { Insights } from "pages/insights";
 import { InvestorServices } from "pages/Investor_Services";
+
 import { DeveloperServices } from "pages/Developer_Services";
 import { OtherServices } from "pages/Other_Services";
+
+import Careers from "pages/Carrers";
 
 const App = () => {
   return (
@@ -40,6 +43,7 @@ const App = () => {
         <Route path="/other-services" element={<OtherServices />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/insights" element={<Insights />} />
+        <Route path="/careers" element={<Careers />} />
 
         <Route
           path="/social_responsibility"
