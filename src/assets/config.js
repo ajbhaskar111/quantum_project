@@ -24,6 +24,11 @@ export const menuItem = [
         label: "Contact Us",
         path: "/contact-us",
       },
+      {
+        id: 5,
+        label: "Our Services",
+        path: "/our-services",
+      },
     ],
   },
   {
