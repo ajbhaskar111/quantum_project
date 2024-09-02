@@ -23,6 +23,7 @@ import { DeveloperServices } from "pages/Developer_Services";
 import { OtherServices } from "pages/Other_Services";
 
 import Careers from "pages/Carrers";
+import { Our_services } from "pages/Our-services";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/insights" element={<Insights />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/our-services" element={<Our_services />} />
 
         <Route
           path="/social_responsibility"

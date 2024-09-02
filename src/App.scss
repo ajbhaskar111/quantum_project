@@ -488,6 +488,15 @@ code {
   }
 }
 
+.left-border-listing{
+  .column-box{
+    border-right:1px solid #000;
+    padding: 0px 15px;
+  }
+  .column-box:last-child{
+    border-right:none
+  }
+}
 @media only screen and (min-width: 1170px) {
   .container,.section-border-width {
     width: 1280px;
