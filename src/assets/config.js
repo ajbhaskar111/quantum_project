@@ -78,8 +78,6 @@ export const menuItem = [
         label: "Insights",
         path: "/insights",
       },
-    
-      
     ],
   },
   {

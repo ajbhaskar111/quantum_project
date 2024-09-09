@@ -24,6 +24,7 @@ import { OtherServices } from "pages/Other_Services";
 
 import Careers from "pages/Carrers";
 import { Our_services } from "pages/Our-services";
+import { InsightsDetails } from "pages/insights-details";
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/insights" element={<Insights />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/our-services" element={<Our_services />} />
+        <Route path="/insights-details" element={<InsightsDetails />} />
 
         <Route
           path="/social_responsibility"

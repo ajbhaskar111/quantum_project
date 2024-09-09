@@ -19,7 +19,7 @@ a.icon-link{
 body{
   background-color: $light_white;
 }
-// .p-component{background-color: transparent !important;}
+.p-component{background-color: transparent !important;}
 body,
 .p-component {
   margin: 0;
@@ -234,6 +234,12 @@ code {
 .listing li{
   list-style: none;
 
+}
+.listing.line{
+  li{
+    display: inline-block;
+    padding-right: 18px;
+  }
 }
 .banner-text{
   position: absolute;

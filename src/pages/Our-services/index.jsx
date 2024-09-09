@@ -159,7 +159,7 @@ export const Our_services = () => {
         <div className="container">
           <div className="grid section-title">
             <div className="lg:col-4 md:col-5 sm:col-12">
-              <TitleHeading title="For Investors" className="mt-0 mb-3" />
+              <TitleHeading title="For Developers" className="mt-0 mb-3" />
             </div>
             <div className="lg:col-8 md:col-7 sm:col-12">
               <div className="grid">
@@ -216,7 +216,7 @@ export const Our_services = () => {
         <div className="container">
           <div className="grid section-title">
             <div className="lg:col-4 md:col-5 sm:col-12">
-              <TitleHeading title="For Developers" className="mt-0 mb-3" />
+              <TitleHeading title="For Others" className="mt-0 mb-3" />
             </div>
             <div className="lg:col-8 md:col-7 sm:col-12">
               <div className="grid">
