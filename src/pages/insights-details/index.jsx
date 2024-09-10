@@ -5,6 +5,9 @@ import { DetailBox } from "molecules/DetailBox";
 import { TitleHeading } from "molecules/TitleHeading";
 import { TestimonialSection } from "pages/communityImpact/testimonial";
 import React from "react";
+import ItemSlider from "./itemSlider";
+import { SectionBorder } from "molecules/SectionBorder";
+import { SmallHadding } from "molecules/SmallHeadding";
 
 export const InsightsDetails = () => {
   return (
@@ -122,7 +125,22 @@ export const InsightsDetails = () => {
           </div>
         </div>
       </section>
-      s
+      <div className="container">
+        <SectionBorder />
+      </div>
+      <section className="section-padding">
+        <div className="container">
+          <div className="gird">
+            <div className="lg:col-12 md:col-12 sm:col-12">
+              <SmallHadding
+                text="Explore More "
+                className="mt-0 text-red-600 text-center"
+              />
+            </div>
+          </div>
+          <ItemSlider />
+        </div>
+      </section>
     </>
   );
 };
